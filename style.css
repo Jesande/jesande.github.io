@@ -1,5 +1,6 @@
 /* colors 
 purple: #7E4BFC
+purple-dark: #2C1843
 grey_bg: #FAFAFA
 grey-txt: #5E5E61
 grey-txt-light: #8F8F94
@@ -14,7 +15,7 @@ grey-txt-light: #8F8F94
 body {
   background-color: #FAFAFA;
   font-family: "Roboto Mono", 'Courier New', Courier, monospace;
-  font-size: 1em;
+  font-size: .9em;
   color: #8F8F94;
   display: flex;
 }
@@ -42,10 +43,38 @@ h1 {
   font-size: 4em;
   color: #7E4BFC;
 }
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #7E4BFC;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+  color: #7E4BFC;
+}
+
 a {
 text-decoration: none;
-font-size: 1em;
 color: #8F8F94;
+}
+
+.education-year{
+  color: #7E4BFC;
+}
+
+.contact-link{
+  color: #FAFAFA;
+}
+
+.section-title-contact {
+  color: #FAFAFA;
+}
+.section-intro-contact {
+  color: #FAFAFA;
 }
 
 .main-title {
@@ -53,10 +82,34 @@ color: #8F8F94;
 }
 
 .section-title {
-
+  
 }
 
 .section-description {
-
   
 }
+
+/* box styles */
+.work-card {
+  width: 300px; /* change to relative */
+  border: 1px solid #7E4BFC;
+  padding: 10px;
+}
+
+img{
+  width: 100%;
+}
+
+.section-about-who {
+
+}
+
+.section-about-how-education {
+
+}
+
+footer{
+  background-color: #2C1843;
+  text-align: center;
+}
+
