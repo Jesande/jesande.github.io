@@ -1,0 +1,62 @@
+/* colors 
+purple: #7E4BFC
+grey_bg: #FAFAFA
+grey-txt: #5E5E61
+grey-txt-light: #8F8F94
+*/
+
+* {
+  /* border: 1px solid green; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: #8F8F94;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav {
+  width: 30%;
+}
+
+section{
+  width: 70%;
+} */
+.nav-aside {
+  display: none;
+}
+/* Typo styles */
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 4em;
+  color: #7E4BFC;
+}
+a {
+text-decoration: none;
+font-size: 1em;
+color: #8F8F94;
+}
+
+.main-title {
+  /* animation in languages */
+}
+
+.section-title {
+
+}
+
+.section-description {
+
+  
+}
