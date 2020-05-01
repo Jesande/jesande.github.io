@@ -252,13 +252,62 @@ section {
   margin-bottom: 1em;
 }
 
+/*-------------------------------------------- contact */
+.socialcontainer {
+  display: flex;
+  /* display: inline-block; */
+}
+
+.socialicon {
+  margin: 20px 30px 0 0;
+  /* height: 3rem; */
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.behance {
+ background-image: url(img/icon-be.svg);
+ background-repeat: no-repeat;
+}
+
+.behance:hover {
+  background-image: url(img/icon-be-hover.svg);
+}
+
+.mail {
+ background-image: url(img/icon-mail.svg);
+ background-repeat: no-repeat;
+}
+
+.mail:hover{
+  background-image: url(img/icon-mail-hover.svg);
+}
+.instagram {
+ background-image: url(img/icon-ig.svg);
+ background-repeat: no-repeat;
+}
+
+.instagram:hover{
+  background-image: url(img/icon-ig-hover.svg);
+}
+.linkedin {
+ background-image: url(img/icon-linkedin.svg);
+ background-repeat: no-repeat;
+}
+
+.linkedin:hover{
+  background-image: url(img/icon-linkedin-hover.svg);
+}
+
+
+
 /*-------------------------------------------- footer */
 footer {
   padding: 1em;
 
   background-color: #5834B3;
 
-  font-size: smaller;
   color: #FAFAFA;
   text-align: center;
 
