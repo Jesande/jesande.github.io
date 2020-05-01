@@ -2,9 +2,24 @@
 purple: #7E4BFC
 purple bg #5834B3
 grey_bg: #FAFAFA
-grey-txt: #5E5E61
+grey-txt: ##666666
 grey-txt-light: #8F8F94
 */
+:root {
+  --purpletxt: #7E4BFC;
+  --txtgrey: #333333;
+  --purplebg: #5834B3;
+  --bg: #2D283E;
+  --light: #e2e6eb;
+  --accent: #802BB1;
+  --black: #1a1a1a;
+  --grey: #dee1e0;
+  --white: #fff;
+
+  --yellow: #fcab2f;
+  --yellow2: #ffde22;
+
+}
 
 * {
   /* border: 1px solid green; */
@@ -14,10 +29,12 @@ grey-txt-light: #8F8F94
 }
 
 body {
+  background-color: var(--light);
   background-color: #FAFAFA;
-  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1em;
-  color: #333333;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .9em;
+  color: var(--txtgrey);
+  /* color: var(--black); */
 }
 
 ul{
@@ -28,6 +45,55 @@ li{
   list-style: none;
 }
 
+/*-------------------------------------------- Typo styles */
+
+.title, .intro {
+  /* margin-top: 4em; */
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  line-height: 1.17em;
+  color: var(--purpletxt); 
+  /* color: white;  */
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.intro {
+  margin: 1rem 0 0 0;
+  max-width: 50%;
+  font-size: 1.9em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.project-title {
+  margin-bottom: .45em;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.1em;
+  text-align: center;
+  color: #7E4BFC;
+}
+
+.main-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 1em;
+  color: #7E4BFC;
+  /* animation in languages */
+}
+
+
+/*-------------------------------------------- header */
 header {
   width: 100%;
   padding: 0 3em;
@@ -51,37 +117,6 @@ nav{
   align-content: space-around;
 }
 
-/*-------------------------------------------- Typo styles */
-
-h1, h2 {
-  margin-top: 4em;
-
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: normal;
-  font-size: 5em;
-  line-height: 1.5em;
-  color: #7E4BFC;
-}
-
-h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5em;
-  font-weight: normal;
-  color: #7E4BFC;
-  max-width: 40%;
-  min-width: 14em;
-}
-
-h4 {
-  margin-bottom: .2em;
-}
-
-a {
-text-decoration: none;
-font-size: 1em;
-color: #333333;
-}
-
 header a {
   padding: 10px;
   text-decoration: none;
@@ -89,39 +124,46 @@ header a {
   color: #666;
   /* border: white solid 1px; */
 }
+
 header a:hover {
-  text-decoration: none;
-  /* font-weight: bold; */
-  color: white;
+  text-decoration: line-through ;
+  font-weight: bold;
 }
 
-.main-title {
-
-  /* animation in languages */
-}
 
 /*-------------------------------------------- sections general*/
 
 section {
-  min-height: 38em;
-  padding: 3em;
+  /* min-height: 30em; */
+  padding: 5%;
 
   /* border: rgb(136, 27, 27) solid 1px; */
 }
 
+.section-content {
+  margin-top: 20%;
+  /* margin-bottom: 1em; */
+  max-width: 75%;
+}
+
 #home, #about, #contact {
-  background-color: #5834B3;
-  color: #FAFAFA;
+  background-color: var(--purplebg);
 } 
 #home * {
-  color: #FAFAFA;
+  color:white;
 } 
 #about * {
-  color: #FAFAFA;
+  color:white;
 } 
 #contact * {
-  color: #FAFAFA;
+  color:white;
 } 
+
+/*-------------------------------------------- home */
+
+#home article {
+  width: 60%;
+}
 
 
 
@@ -129,15 +171,19 @@ section {
 
 .project-container {
   padding: 0;
-  margin: 20px auto;
+  margin: 4em auto 7em;
 
   position: relative;
-  
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-
+  max-width: 980px;
   box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+  /* text-align: center; */
+}
+
+.project-link {
+  /* img al 40% */
+}
+.project-link:hover {
+  /* on hover img al 100% */
 }
 
 .project-img {
@@ -150,18 +196,23 @@ section {
   opacity: 100%;
 }
 
-.project-label {
-  width: 35%;
+.project-label-container {
   margin: 0 auto;
-
   position: absolute;
-  top: 40%;
-  left: 40%;
-  
-  /* border: rgb(136, 27, 27) solid 1px; */
+  top: calc(50% - 50px);
+  left: calc(50% - 152px);
 }
 
-
+.project-label-content {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* border: rgb(0, 187, 16) solid 2px; */
+}
 
 /*-------------------------------------------- about */
 
