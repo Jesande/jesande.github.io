@@ -1,23 +1,21 @@
 /* colors 
-purple: #7E4BFC
+primary: #7E4BFC
 purple bg #5834B3
 grey_bg: #FAFAFA
 grey-txt: ##666666
 grey-txt-light: #8F8F94
+--yellow: #fcab2f;
+--yellow2: #ffde22;
 */
 :root {
-  --purpletxt: #7E4BFC;
+  --primarytxt: #7E4BFC;
   --txtgrey: #333333;
-  --purplebg: #5834B3;
-  --bg: #2D283E;
-  --light: #e2e6eb;
-  --accent: #802BB1;
+  --primarybg: #5834B3;
+  --light: #FAFAFA;
+  --accent: #14f501;
   --black: #1a1a1a;
   --grey: #dee1e0;
-  --white: #fff;
 
-  --yellow: #fcab2f;
-  --yellow2: #ffde22;
 
 }
 
@@ -30,7 +28,6 @@ grey-txt-light: #8F8F94
 
 body {
   background-color: var(--light);
-  background-color: #FAFAFA;
   font-family: 'Courier New', Courier, monospace;
   font-size: .9em;
   color: var(--txtgrey);
@@ -50,10 +47,10 @@ li{
 .title, .intro {
   /* margin-top: 4em; */
   
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   line-height: 1.17em;
-  color: var(--purpletxt); 
+  color: var(--primarytxt); 
   /* color: white;  */
 }
 
@@ -68,9 +65,8 @@ li{
 }
 
 a {
-  text-decoration: none;
   font-size: 1rem;
-  color: #333333;
+  color:var(--accent);
 }
 
 .project-title {
@@ -80,7 +76,7 @@ a {
   font-size: 2rem;
   line-height: 1.1em;
   text-align: center;
-  color: #7E4BFC;
+  color: var(--primarytxt);
 }
 
 .main-title {
@@ -88,10 +84,32 @@ a {
   font-weight: normal;
   font-size: 4rem;
   line-height: 1em;
-  color: #7E4BFC;
-  /* animation in languages */
+  width: 400px;
+
+
+/* animation in languages */
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid var(--accent); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 ; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(15, end),
+    blink-caret .5s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent) }
+}
 
 /*-------------------------------------------- header */
 header {
@@ -108,8 +126,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  mix-blend-mode: luminosity;
 }
 
 nav{
@@ -121,33 +137,32 @@ header a {
   padding: 10px;
   text-decoration: none;
   font-size: 1em;
-  color: #666;
+  font-weight: bold;
   /* border: white solid 1px; */
 }
 
 header a:hover {
   text-decoration: line-through ;
-  font-weight: bold;
 }
 
 
 /*-------------------------------------------- sections general*/
 
 section {
-  /* min-height: 30em; */
+  min-height: 100vh;
   padding: 5%;
-
-  /* border: rgb(136, 27, 27) solid 1px; */
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .section-content {
-  margin-top: 20%;
-  /* margin-bottom: 1em; */
   max-width: 75%;
 }
 
 #home, #about, #contact {
-  background-color: var(--purplebg);
+  background-color: var(--primarybg);
 } 
 #home * {
   color:white;
@@ -159,33 +174,42 @@ section {
   color:white;
 } 
 
+
 /*-------------------------------------------- home */
 
-#home article {
+/* #home article {
   width: 60%;
-}
+} */
 
 
 
 /*-------------------------------------------- projects */
 
+#project-list {
+  display: block;
+  margin: 0;
+}
+
 .project-container {
   padding: 0;
-  margin: 4em auto 7em;
+  margin: 4em auto;
 
-  position: relative;
+
   max-width: 980px;
   box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
-  /* text-align: center; */
 }
 
+.project-content {
+  position: relative;
+}
+ /*
 .project-link {
-  /* img al 40% */
+  img al 40% 
 }
 .project-link:hover {
-  /* on hover img al 100% */
+  on hover img al 100% 
 }
-
+*/
 .project-img {
   max-width: 100%;
   margin: 0 auto;
@@ -217,35 +241,34 @@ section {
 /*-------------------------------------------- about */
 
 .about-content {
-  padding: 3em;
-  display:  grid;
-  grid-template-columns: 2fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-gap: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-/* .about-abstrat{
- grid-column: 1 / 2;
- grid-row: 1 / 3;
-} */
+.about-abstrat{
+ max-width: 50%;
+} 
 
-/* 
-.about-skills {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+.about-aside {
+  max-width: 25%;
 }
-.about-education {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-} */
 
 .about-abstrat p{
   margin-bottom: 1em;
-
+  
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #7E4BFC;
+}
+.about-abstrat a{
+  margin-bottom: 1em;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .about-aside ul{
@@ -255,6 +278,7 @@ section {
 /*-------------------------------------------- contact */
 .socialcontainer {
   display: flex;
+
   /* display: inline-block; */
 }
 

@@ -6,6 +6,14 @@
   <meta name="author" content=“Jessica Delgado”>
   <link rel="stylesheet" href="style.css">
   <title>Jesande Portfolio</title>
+
+  <!-- scroll js -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+    ScrollReveal({ duration: 500 })
+    </script>
+
+<!-- scroll js -->
 </head>
 <body>
 
@@ -20,7 +28,7 @@
 
 <section id="home">
   <article class="section-content">
-    <p class="main-title">hello!</p>
+    <p class="main-title">hello! Ciao! Hola!</p>
     <h1 class="intro">My name is Jessica Delgado. I’m a graphic/web designer. Let me show you my most recent projects</h1>
   </article>
 </section>
@@ -35,7 +43,20 @@
 <section id="project-list">
   <article class="project-container">
     <a href="#" class="project-link">
-      <figure class="project-container">
+      <figure class="project-content">
+      <img src="img/project-magis.png" alt="The fork app" class="project-img"> 
+        <figcaption class="project-label-container">
+          <div class="project-label-content">
+            <h3 class="project-title">UX study and UI redesign</h3>  
+            <p>[UX/UI]</p>
+          </div>
+        </figcaption>
+      </figure>
+    </a> 
+  </article>
+  <article class="project-container">
+    <a href="#" class="project-link">
+      <figure class="project-content">
       <img src="img/project-magis.png" alt="MagisDesign" class="project-img"> 
         <figcaption class="project-label-container">
           <div class="project-label-content">
@@ -48,18 +69,19 @@
   </article>
   <article class="project-container">
     <a href="#" class="project-link">
-      <figure class="project-container">
+      <figure class="project-content">
       <img src="img/project-magis.png" alt="MagisDesign" class="project-img"> 
         <figcaption class="project-label-container">
           <div class="project-label-content">
-            <h3 class="project-title">Configurator tool optimization</h3>  
-            <p>[Digital Strategy]</p>
+            <h3 class="project-title">CookBook</h3>  
+            <p>[Editorial Design]</p>
           </div>
         </figcaption>
       </figure>
     </a> 
   </article>
-</section>
+   
+  </section>
 
 
 <section id="about">
@@ -72,7 +94,7 @@
 <section class="about-content">
   
   <article class="about-abstrat">
-  <p> After working for more than 10 years as a graphic designer as an employee, as a freelancer (in editorial / web / digital / advertising) or even as a business owner (ice cream shop), I have learnt the importance of team-work and communication with my colleagues and superiors and developed skills to plan, develop, and deliver design/visual solutions. </p>  <br>
+  <p> After working for more than 10 years as a graphic designer as an employee, as a <a>freelancer</a> (in editorial / web / digital / advertising) or even as a <a>business owner</a> (ice cream shop), I have learnt the importance of team-work and communication with my colleagues and superiors and developed skills to plan, develop, and deliver design/visual solutions. </p> 
 
   <p>In order to keep learning and expand my knowledge as a designer, I decided to move out of Colombia and come to Italy for studying a master in a field that I’ve been curious about: Web and Digital Design. </p>
     
@@ -80,17 +102,43 @@
   </article>
 
   <article class="about-aside">
-  <h3>:skills</h3>
+  <h2 class="intro">skills</h2>
   <ul>
-    <li>‘HTML’, ‘CSS’, ‘Photoshop’, ‘Illustrator’, ‘InDesign’, ‘After Effects’, ‘UX/UI’, ‘Sketch’, ‘XD’...</li>
+    <li>‘HTML’ ‘CSS’ </li>
+    <li>‘Photoshop’ </li>
+    <li>‘Illustrator’</li>
+    <li>‘InDesign’</li>
+    <li>‘After Effects’</li>
+    <li>‘Sketch’ ‘XD’</li>
   </ul>
 
-<!-- </article>
 
-<article class="about-education"> -->
-  <h3>:education</h3>
-  
+  <h3 class="intro">education </h3>
   <ul> 
+    <li>Master in Digital and Web Design. </li>
+    <li>> SPD - Italy’ > 2020 </li>
+  </ul>
+
+  <ul>
+    <li>Diploma in Branding and Ceramic Product Design </li>
+    <li>> FESC - Colombia > 2014</li>
+  </ul>
+ 
+  <ul>  
+    <li>Diploma in Commercial Management </li>
+    <li>> UMB - Colombia > 2010 </li>
+  </ul>
+  
+  <ul>  
+    <li>Diploma in Marketing and Web Design </li>
+    <li>> UJTL - Colombia > 2008</li>
+  </ul>
+  
+  <ul>  
+    <li>Professional in Graphic Design </li>
+    <li>> UJTL - Colombia > 2008</li>
+  </ul>
+  <!-- <ul> 
     <li>Master in Digital and Web Design. </li>
     <li>> SPD - Scuola Politecnica di Design </li>
     <li>‘Milano, Italy’: 2019-2020] </li>
@@ -118,9 +166,8 @@
     <li>rofessional in Graphic Design </li>
     <li>> Universidad Jorge Tadeo Lozano </li>
     <li>[‘Bogotá, Colombia’; 2001-2006]</li>
-  </ul>
+  </ul> -->
 
-  <!-- </article> -->
 
 </section>
 
@@ -143,5 +190,12 @@
 </footer>
 
 </div>
+<script>
+  ScrollReveal().reveal('.main-title')
+  // ScrollReveal().reveal('.intro', { delay: 500 })
+  ScrollReveal().reveal('.title')
+  ScrollReveal().reveal('.intro', { delay: 250 })
+  ScrollReveal().reveal('.project-content', { delay: 500 })
+</script>
 </body>
 </html>
