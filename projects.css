@@ -1,0 +1,134 @@
+/* colors 
+primary: #7E4BFC
+purple bg #5834B3
+grey_bg: #FAFAFA
+grey-txt: ##666666
+grey-txt-light: #8F8F94
+--yellow: #fcab2f;
+--yellow2: #ffde22;
+*/
+:root {
+  --primarytxt: #7E4BFC;
+  --txtgrey: #3f3f3f;
+  --primarybg: #5834B3;
+  --light: #FAFAFA;
+  --accent: #14f501;
+  --black: #1a1a1a;
+  --grey: #dee1e0;
+}
+
+* {
+  /* border: 1px solid green; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .9em;
+  color: var(--txtgrey);
+
+  /* color: var(--black); */
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+
+a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: inherit;
+  text-decoration: none;
+  color: var(--primarytxt);
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--txtgrey);
+
+}
+
+/*-------------------------------------------- nav */
+
+nav{
+  width: 100%;
+  height: 50px;
+  padding: 5%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*-------------------------------------------- header */
+
+header {
+  margin: 150px 0 100px;
+  padding: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+h1 {
+  max-width: 400px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.17em;
+  color: var(--primarytxt); 
+  color:var(--txtgrey);
+  
+}
+/*-------------------------------------------- behind the results */
+
+.behind-content {
+  max-width: 350px;
+  background-color: var(--light);
+  padding: 30px;
+  border: solid grey 1px;
+  position: absolute;
+  top: 280px;
+  right: 5%;
+}
+
+.behind-content h2 {
+  font-size: .9em;
+  margin-top: 1em;
+}
+
+.behind-content p{
+  margin-top: .6em;
+}
+
+/*-------------------------------------------- section results */
+
+section {
+  max-width: 900px;
+  text-align: center;
+}
+
+/*-------------------------------------------- footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 5%;
+  text-align: right;
+}

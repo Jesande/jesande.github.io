@@ -61,16 +61,28 @@ li{
 .intro {
   margin: 1rem 0 0 0;
   max-width: 50%;
-  font-size: 1.9em;
+  font-size: 1.9rem;
 }
 
 a {
   font-family: 'Courier New', Courier, monospace;
-
-  font-size: 1rem;
+  font-size: inherit;
   text-decoration: none;
   color:var(--accent);
 }
+a:hover {
+  text-decoration: underline;
+  color:var(--accent);
+}
+
+.intro a{
+  /* margin-bottom: 1em; */
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
 
 .project-title {
   margin-bottom: .45em;
@@ -145,7 +157,7 @@ header a {
 }
 
 header a:hover {
-  text-decoration: line-through ;
+  text-decoration: underline ;
 }
 
 
@@ -241,7 +253,7 @@ section {
 }
 
 /*-------------------------------------------- about */
-/* as flex  */
+/* as flex  
 .about-content {
   min-height: 100vh;
   display: flex;
@@ -268,49 +280,44 @@ section {
   color: var(--primarytxt);
 }
 
-.about-abstrat a{
-  margin-bottom: 1em;
-  
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Courier New', Courier, monospace;
-
-
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .about-aside ul{
   margin-bottom: 1em;
-}
+}*/
 
 
-/* as grid 
+/* as grid */
 
 
 .about-content {
   display: grid;
-  grid-template-columns: 4fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-gap: 1em;
+  justify-content: center;
   align-content: center;
-  justify-self: center;
+  align-items: center;
 }
 
 .about-abstrat{
  grid-column: 1/2;
  grid-row: 1/2;
- justify-self: end;
- align-self: flex-end;
 } 
 
 .about-aside {
   grid-column: 2/3;
   grid-row: 1/2;
+
+  text-align: center;
 }
+
 .about-foot {
   grid-column:1/3;
   grid-row: 2/3;
+  align-self: flex-end;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .about-abstrat p{
@@ -324,7 +331,12 @@ section {
 .about-abstrat a{
   margin-bottom: 1em;
   
-font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.about-aside a{
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -332,8 +344,16 @@ font-family: 'Playfair Display', serif;
 .about-aside ul{
   margin-bottom: 1em;
 }
- */
 
+h4 {
+  display: inline-block;
+  font-size: .9rem;
+  margin-bottom: 1em;
+  font-weight: normal;
+  color: var(--primarytxt);
+  border-bottom: 1px var(--primarytxt) solid;
+
+}
 
 
 /*-------------------------------------------- contact */
