@@ -216,7 +216,7 @@ section {
 /*-------------------------------------------- projects */
 
 #project-list {
-  display: block;
+  /* display: block; */
   margin: 0;
 }
 
@@ -229,6 +229,9 @@ section {
 }
 
 .project-content {
+  margin: 0;
+  padding: 0;
+
   position: relative;
 }
  /*
@@ -241,8 +244,8 @@ section {
 */
 .project-img {
   max-width: 100%;
-  margin: 0 auto;
-  opacity: 40%;
+  margin: 0;
+  opacity: 50%;
 }
 
 .project-img:hover {
