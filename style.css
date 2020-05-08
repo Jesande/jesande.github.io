@@ -6,17 +6,6 @@ grey-txt: ##666666
 grey-txt-light: #8F8F94
 --yellow: #fcab2f;
 --yellow2: #ffde22;
-*/
-:root {
-  --primarytxt: #7E4BFC;
-  --txtgrey: #333333;
-  --primarybg: #5834B3;
-  --light: #FAFAFA;
-  --accent: #22F50F;
-  --black: #1a1a1a;
-  --grey: #dee1e0;
-  --yellow2: #ffde22;
-
   --color-primary-black: #0f1124;
   --color-primary-darker: #181b32;
   --color-primary-dark: #3417aa;
@@ -27,10 +16,20 @@ grey-txt-light: #8F8F94
   --color-secondary-dark: #00aeb5;
   --color-secondary-main: #03cad2;
   --color-secondary-light: #45dfe6;
+  */
+:root {
+  --primarytxt: #7E4BFC;
+  --txtgrey: #333333;
+  --primarybg: rgb(71, 42, 143);
+  --primarybg: #5834B3;
+  --light: #FAFAFA;
+  --accent: #22F50F;
+  --accent: #03cad2;
+  --accent: #35d347;
+  --black: #1a1a1a;
+  --grey: #dee1e0;
 }
 
-
-}
 
 * {
   /* border: 1px solid green; */
@@ -40,9 +39,14 @@ grey-txt-light: #8F8F94
 }
 
 body {
+  padding: 0;
+  margin: 0;
+
   background-color: var(--light);
+  font-family: 'IBM Plex Mono', monospace;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
+
+  font-size: 1.2em;
   color: var(--txtgrey);
   color: var(--primarytxt);
 }
@@ -58,13 +62,10 @@ li{
 /*-------------------------------------------- Typo styles */
 
 .title, .intro {
-  /* margin-top: 4em; */
-  
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   line-height: 1.17em;
   color: var(--primarytxt); 
-  /* color: white;  */
 }
 
 .title {
@@ -78,6 +79,7 @@ li{
 }
 
 a {
+  font-family: 'IBM Plex Mono', monospace;
   font-family: 'Courier New', Courier, monospace;
   font-size: inherit;
   font-weight: 400;
@@ -85,14 +87,13 @@ a {
   color:var(--txtgrey);
   color:var(--accent);
 }
+
 a:hover {
   text-decoration: underline;
   color:var(--accent);
 }
 
 .intro a{
-  /* margin-bottom: 1em; */
-  
   font-family: 'Courier New', Courier, monospace;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
@@ -110,23 +111,25 @@ a:hover {
 }
 
 .main-title {
+  font-family: 'IBM Plex Mono', monospace;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   font-size: 4rem;
   line-height: 1em;
-  width: 400px;
+  /* width: 400px; */
 
 
 /* animation in languages */
 
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid var(--accent); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 ; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+/*  overflow: hidden; Ensures the content is not revealed until the animation*/
+/*  border-right: .1em solid var(--accent); The typwriter cursor */
+/*  white-space: nowrap;  Keeps the content on a single line */
+/*  margin: 0 ;Gives that scrolling effect as the typing happens */
+/*   letter-spacing: .15em; Adjust as needed 
   animation: 
-    typing 1.5s steps(15, end),
+    typing 1.5s steps(5, end),
     blink-caret .5s step-end infinite;
+  animation-iteration-count: infinite;*/
 }
 
 /* The typing effect */
@@ -181,7 +184,7 @@ header a:hover {
 section {
   min-height: 100vh;
   padding: 5%;
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -216,7 +219,6 @@ section {
 /*-------------------------------------------- projects */
 
 #project-list {
-  /* display: block; */
   margin: 0;
 }
 
@@ -270,111 +272,81 @@ section {
   /* border: rgb(0, 187, 16) solid 2px; */
 }
 
+
+.thefork-link {
+  background-image: url("img/thefork/cover-100.jpg");
+  background-position: center;
+  
+}
+
 /*-------------------------------------------- about */
-/* as flex  
+
+/* .about-content {
+  display: grid;
+  grid-template-columns: 6fr 2fr 3fr;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-abstrat{
+  margin: 0;
+  grid-column: 1/2;
+} 
+
+.about-aside {
+  grid-column:3/4;
+  grid-row: 1/3;
+} */
+
 .about-content {
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.about-abstrat{
- max-width: 50%;
-} 
-
-.about-aside {
-  max-width: 25%;
-}
-
-.about-abstrat p{
-  margin-bottom: 1em;
-  
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Playfair Display', serif;
-
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: var(--primarytxt);
-}
-
-
-.about-aside ul{
-  margin-bottom: 1em;
-}*/
-
-
-/* as grid */
-
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 3fr 1fr;
-  grid-gap: 1em;
-  justify-content: center;
-  align-content: center;
   align-items: center;
 }
-
 .about-abstrat{
- grid-column: 1/2;
- grid-row: 1/2;
+max-width: 55%;
+min-width: 50%;
 } 
 
 .about-aside {
-  grid-column: 2/3;
-  grid-row: 1/2;
-
-  text-align: center;
+max-width: 25%;
+min-width: 25%;
 }
 
-.about-foot {
-  grid-column:1/3;
-  grid-row: 2/3;
-  align-self: flex-end;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 .about-abstrat p{
-  margin-bottom: 1em;
+  margin:0 0 1em;
   
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: normal;
   color:var(--primarytxt);
 }
+
 .about-abstrat a{
-  margin-bottom: 1em;
-  
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-.about-aside a{
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-.about-aside ul{
-  margin-bottom: 1em;
-}
 
 h4 {
-  display: inline-block;
-  font-size: .9rem;
-  margin-bottom: 1em;
-  font-weight: normal;
-  color: var(--primarytxt);
-  border-bottom: 1px var(--primarytxt) solid;
+  /* display: inline-block; */
+  font-size: 1rem;
+  margin: 0 0 .9em;
+  font-weight: normal ;
+  /* color: var(--primarybg); */
+  /* border-bottom: 1px var(--primarytxt) solid; */
 }
 
-.about-foot div {
-  padding-right: 15px;
+.about-aside p{
+  margin:0 0 1.5rem;
+
 }
+
 
 
 /*-------------------------------------------- contact */
@@ -432,7 +404,7 @@ h4 {
 footer {
   padding: 1em;
 
-  background-color: #5834B3;
+  background-color: var(--primarybg);
 
   color: #FAFAFA;
   text-align: center;

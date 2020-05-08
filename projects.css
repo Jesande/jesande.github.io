@@ -25,12 +25,11 @@ grey-txt-light: #8F8F94
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--light);
   font-family: 'Courier New', Courier, monospace;
   font-size: .9em;
-  color: var(--grey);
+  color: var(--primarytxt);
 
-  /* color: var(--black); */
 }
 
 .wrapper {
@@ -91,13 +90,15 @@ nav{
 /*-------------------------------------------- header */
 
 header {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 150px auto 50px;
-  /* padding: 5%; */
+  padding: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+
+  /* background-color: var(--black); */
 }
 
 h1 {
@@ -115,10 +116,10 @@ h1 {
   max-width: 400px;
   /* background-color: var(--light); */
   padding: 30px;
-  position: absolute;
+  /* position: absolute; */
   /* top: 280px;
-  right: 0; 
-  z-index: -1;*/
+  right: 0;  */
+  z-index: -1;
   align-self: flex-end;
   transform: translateX(100%);
   transition: transform 200ms ease-in;
@@ -138,10 +139,11 @@ h1 {
 
 .behind-content-visible {
   display: block;
-  position: relative;
-  right: -150px;
-  /* align-self: flex-end; */
-  /* transform: translateX(100%); */
+  /* position: relative;
+  top: 0;
+  right: -150px; */
+  align-self: flex-end; 
+  /* transform: translateX(100%);*/
 }
 
 .behind-content h2 {
