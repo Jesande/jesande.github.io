@@ -180,19 +180,29 @@ section {
   padding: 0;
 
   position: relative;
+  
+  /* transform: scale(1);
+  transition: transform 350ms ease-in 200ms; */
 }
 
 .project-img {
   max-width: 100%;
   margin: 0;
+  
 }
 
 .project-label-container {
   position: absolute;
   top: 40%;
   left: 5%;
+
+  width: 300px;
 }
 
+/* .project-content:hover  {
+  transform: scale(1.1);
+  transition: transform 350ms ease-in;
+} */
 
 /*-------------------------------------------- about */
 
@@ -287,7 +297,102 @@ h4 {
 /*-------------------------------------------- footer */
 footer {
   padding: 1em;
-font-size: small;
+  font-size: small;
   text-align: center;
+  
+}
 
+
+/*-------------------------------------------- the fork */
+
+.project-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.behind-results {
+
+  align-self: flex-end;
+  justify-self: end;
+  /* display: inline-block; */
+  border-bottom: 1px solid var(--black);
+  color: var(--black);
+ /* background-color: white;
+   transition: background-color 200ms ease-in 200ms; */
+}
+
+.behind-results:hover {
+  /* padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  
+  color: var(--black);
+  border-bottom: 1px solid var(--light);
+ background-color: var(--grey); 
+  /* transition: background-color 200ms ease-in 200ms; */
+}
+
+
+.behind-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.behind-btn li:first-child {
+  margin-right: 1em;
+}
+
+
+.project-info {
+  margin: 0;
+  display: none;
+}
+
+.project-info-visible {
+  display: block;
+} 
+
+.project-info article {
+ margin-bottom: 3em;
+}
+
+.project-info h3 {
+  margin-bottom: .5em;
+}
+
+.tags {
+  display: inline;
+  margin-right: 1em;
+  padding: 0 .3em;
+
+  font-size: small;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--grey);
+  transition: background-color 100ms ease-in 200ms;
+}
+
+.tags:hover {
+  display: inline;
+  margin-right: 1em;
+  padding: 0 .3em;
+
+  font-size: small;
+  font-weight: 400;
+  color: var(--light);
+  background-color: var(--black);
+  transition: background-color 100ms ease-in 300ms;
 }

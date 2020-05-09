@@ -3,63 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/projects.css">
+  <link rel="stylesheet" href="/style-wv.css">
 
   <title>Costumization tool optimization</title>
+
+    <!-- scroll js -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({ duration: 500 })
+      </script>
+  
+  <!-- scroll js -->
 </head>
 <body>
-  <nav>
-    <a href="/index.html">[ Jesande ]</a>
-    <a href="/index.html"> Return ←</a>
-  </nav> 
+  <header>
+      <a href="/index.html" class="logo"> </a>
+      <nav>
+        <ul>
+          <li><a href="#work">Return ←</a></li>
 
+        </ul>
+      </nav>
+  </header>
+  
   
 <main>
-  <header>
-    <h1>Ux improvement and redesign UI</h1>
-    <a id="results-btn" href="#">Behind the results +</a>
-  </header>
 
+  <div class="project-wrapper">
+  
+    <section>
+      <h1>UX improvement and UI re-design</h1>
+      <p class="intro">The Fork app</p>
+   
 
-<article id="results" class="behind-content">
-  <h2>:brief</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas assumenda voluptatem quas quisquam. Tempore nemo molestias sunt nisi blanditiis officiis excepturi exercitationem magni provident dolorem mollitia, unde, harum iste.</p>
-  <p>Create a digital strategy for Magis Company by identifying the brand’s requirements and opportunities for development focusing on the customization tool of their website.</p>
-  <h2>:solutions</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt perferendis similique cumque, veritatis cupiditate inventore expedita accusantium voluptatum assumenda doloremque atque eum obcaecati, recusandae modi aperiam quisquam voluptates error!
-  Voluptate eos error saepe recusandae perspiciatis alias est perferendis eligendi nisi sapiente. Adipisci porro ut sequi, rem rerum ratione asperiores ducimus itaque. Temporibus architecto ea velit nam vero maxime praesentium!
-  Nesciunt aliquid doloribus voluptatem animi ipsum maiores numquam quae, alias tempore aliquam. Incidunt quia cupiditate ut impedit illo ducimus iusto nostrum unde, esse animi blanditiis eum nobis. Tempore, neque obcaecati!
-  Consequuntur quis fugit necessitatibus nihil, in illo modi facilis quibusdam nostrum? Vitae, harum. Placeat aliquam deleniti et similique sit incidunt perferendis, amet eligendi nisi inventore maiores tempore aliquid consequuntur adipisci!</p>
-  <h2>:Team</h2>
-  <p>@Benedetta</p>
-  <p>@Adele</p>
-  <h2>:mentor</h2>
-  <p>@Catani</p>
-</article>
-  <div class="wrapper">
-  <section class="results">
-    <img src="/img/thefork/1.jpg" alt="">
-    <img src="/img/thefork/2.jpg" alt="">
-    <img src="/img/thefork/3.jpg" alt="">
-    <img src="/img/thefork/4.jpg" alt="">
-    <img src="/img/thefork/5.jpg" alt="">
-    <img src="/img/thefork/6.jpg" alt="">
-  </section>
+    <a href="#" class="behind-results">
+      <ul class="behind-btn">
+        <li>Behind the results</li>
+        <li>+</li>
+      </ul>
+    </a>
+ </section>
+    <!-- <div class="project-info">
+      <article>
+        <h3>The brief</h3>  
+        <p>Redesign TheFork with the goal of increasing users’ adoption and usage.</p>
+      </article>
+      <article>
+        <h3>The challenge</h3>
+        <p>The Fork is an app/website that helps people find and book a table at restaurant. It provides restaurant reviews, menu, pricing, hours and provides great deals (up to 50% off).</p>
+        <p class="tags">Research </p>
+        <p class="tags"> Wireframe </p>
+        <p class="tags">Prototyping </p>
+        <p class="tags">User testing. </p>
+      </article>
+      <article>
+        <h3>Our solutions</h3>
+        <p>After studied the application, made interviews and surveys, we found the users needs and their issues with the service.</p> 
+      </article>
+      <article>
+        <h3>Team</h3>
+        <a>@Benedetta</a> 
+        <a>@Adele</a>
+      </article>
+      <article>
+        <h3>:mentor</h3>
+        <a>@Catani</a>
+      </article>
+    </div> -->
 
+  <section>
+    <img src="/img/thefork/thefork-web_1.png" alt="">
+    <img src="/img/thefork/thefork-web_2.png" alt="">
+      <img src="/img/thefork/thefork-web_3.png" alt="">
+      <img src="/img/thefork/thefork-web_4.png" alt="">
+      <img src="/img/thefork/thefork-web_5.png" alt="">
+      <img src="/img/thefork/thefork-web_6.png" alt="">
+      <img src="/img/thefork/thefork-web_7.png" alt="">
+      <img src="/img/thefork/thefork-web_8.png" alt="">
+      <img src="/img/thefork/thefork-web_9.png" alt="">
+
+    </section>
+
+  </div>
 </main>
-</div>
+
 <footer> <a href="magis.html">Next project ➝ </a> 
 </footer>
 
 <script>
-  var resultsBtn = document.getElementById ("results-btn");
-  var results = document.getElementById("results");
-
-  resultsBtn.addEventListener("click", openResults);
-  function openResults() {
-    results.classList.toggle("behind-content-visible");
-  }
-
+  ScrollReveal().reveal('h1')
+  ScrollReveal().reveal('.intro', { delay: 250 })
+  ScrollReveal().reveal('.project-content')
+  ScrollReveal().reveal('.project-info')
+  ScrollReveal().reveal('h3', { delay: 250 })
+  ScrollReveal().reveal('p', { delay: 350 })
+  ScrollReveal().reveal('a', { delay: 350 })
 </script>
 
 </body>
