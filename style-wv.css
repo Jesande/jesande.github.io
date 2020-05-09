@@ -1,0 +1,293 @@
+/* colors 
+primary: #7E4BFC
+purple bg #5834B3
+grey_bg: #FAFAFA
+grey-txt: ##666666
+grey-txt-light: #8F8F94
+--yellow: #fcab2f;
+--yellow2: #ffde22;
+  --color-primary-black: #0f1124;
+  --color-primary-darker: #181b32;
+  --color-primary-dark: #3417aa;
+  --color-primary-main: #4b22f4;
+  --color-primary-medium: #6945ff;
+  --color-primary-light: #6f4ef6;
+  --color-primary-lighter: #9c86f9;
+  --color-secondary-dark: #00aeb5;
+  --color-secondary-main: #03cad2;
+  --color-secondary-light: #45dfe6;
+  */
+:root {
+  --primarytxt:#111111;
+  --light: #FAFAFA;
+  --grey: #dae1e7;
+  --accent: #5834B3;
+  --accent: #d29b03;
+  --accent: #FEBB01;
+  --black: #1a1a1a;
+}
+
+
+* {
+  /* border: 1px solid green; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--light);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--txtgrey);
+  color: var(--primarytxt);
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+/*-------------------------------------------- Typo styles */
+
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--primarytxt); 
+  font-size: 1.9rem;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color:var(--primarytxt);
+}
+
+a:hover {
+  text-decoration: none;
+  color:var(--accent);
+}
+
+.intro a{
+  color:var(--accent);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+header a:hover {
+  color:var(--accent);
+}
+
+.project-container a {
+  font-weight: 300;
+}
+/*-------------------------------------------- header */
+
+
+header {
+  width: 100%;
+  padding: 0 3em;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+nav ul li {
+  padding: 0 0 0 30px;
+}
+
+.logo {
+  width: 45px;
+  height: 40px;
+  background-image: url(img/logo.svg);
+  background-position: left;
+  background-size: cover;
+}
+
+.logo:hover {
+  background-image: url(img/logo-accent.svg);
+  background-position: left;
+  background-size: cover;
+
+}
+/*-------------------------------------------- sections general*/
+
+section {
+  min-height: 100vh;
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/*-------------------------------------------- home */
+
+/* #home article {
+  width: 60%;
+} */
+
+
+
+/*-------------------------------------------- projects */
+
+#project-list {
+  margin: 0;
+}
+
+.project-container {
+  padding: 0;
+  margin: 4em auto;
+
+  max-width: 980px;
+  box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+}
+
+.project-content {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+}
+
+.project-img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.project-label-container {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+
+/*-------------------------------------------- about */
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-abstrat {
+max-width: 55%;
+min-width: 50%;
+} 
+
+.about-aside {
+max-width: 25%;
+min-width: 25%;
+}
+
+
+h4 {
+  font-size: 1rem;
+  margin: 0 0 .9em;
+  font-weight: normal ;
+  color: #a1a1a1;
+}
+
+.about-abstrat p{
+  margin:0 0 1.5rem;
+  font-weight: 200;
+}
+
+.about-aside p{
+  margin:0 0 1.5rem;
+  font-weight: 200;
+}
+
+
+
+/*-------------------------------------------- contact */
+.socialcontainer {
+  display: flex;
+
+  /* display: inline-block; */
+}
+
+.socialicon {
+  margin: 20px 30px 0 0;
+  /* height: 3rem; */
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.behance {
+ background-image: url(img/icon-be.svg);
+ background-repeat: no-repeat;
+}
+
+.behance:hover {
+  background-image: url(img/icon-be-hover.svg);
+}
+
+.mail {
+ background-image: url(img/icon-mail.svg);
+ background-repeat: no-repeat;
+}
+
+.mail:hover{
+  background-image: url(img/icon-mail-hover.svg);
+}
+.instagram {
+ background-image: url(img/icon-ig.svg);
+ background-repeat: no-repeat;
+}
+
+.instagram:hover{
+  background-image: url(img/icon-ig-hover.svg);
+}
+.linkedin {
+ background-image: url(img/icon-linkedin.svg);
+ background-repeat: no-repeat;
+}
+
+.linkedin:hover{
+  background-image: url(img/icon-linkedin-hover.svg);
+}
+
+
+
+/*-------------------------------------------- footer */
+footer {
+  padding: 1em;
+font-size: small;
+  text-align: center;
+
+}
