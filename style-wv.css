@@ -173,6 +173,12 @@ section {
 
   max-width: 980px;
   box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+  transition: transform 300ms ease-out 200ms;
+}
+
+.project-container:hover {
+  transform: scale(1.05);
+  transition: transform 300ms ease-in 250ms;
 }
 
 .project-content {
@@ -198,12 +204,16 @@ section {
 
   width: 300px;
 }
+.magis {
+  top: 40%;
+  left: 35%;
+  
+  width: 300px;
+}
 
-/* .project-content:hover  {
-  transform: scale(1.1);
-  transition: transform 350ms ease-in;
-} */
-
+.project-container a:hover{
+ color: var(--primarytxt);
+}
 /*-------------------------------------------- about */
 
 .about-content {
