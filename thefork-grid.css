@@ -1,55 +1,223 @@
+
 :root {
   --primarytxt:#111111;
   --light: #FAFAFA;
   --grey: #dae1e7;
+  --white-dark: hsl(0, 0%, 95%);
   --accent: #FEBB01;
+  --accent-opacity: rgba(254, 187, 1, 0);
   --black: #1a1a1a;
 }
 
-*{
- box-sizing: border-box;
+* {
+  /* border: 1px solid green; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.project-wrapper {
-  max-width: 980px;
+/* global */
+
+body {
+  padding: 0;
+  margin: 0;
+  
+  background-color: var(--light);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.25em;
+  color: var(--primarytxt);
 }
 
-section {
-
-}
-
-section article {
-  margin-bottom: 1em;
-}
-
-
-.thefork-content h2,h3 {
+h1, h2, h3, h4 {
   margin: .5em 0;
 }
-.thefork-content h3 {
-  font-weight: 400;
-  /* color: var(--grey) */
+
+p{
+  margin: .5em 0;
+}
+
+li{
+  margin: .5em 0;
 }
 
 
-.thefork-header  {
-  background-image: url("/img/thefork/cover-100.png");
+/* padding: 0 3em; */
+
+
+
+
+/*----------------------- nav */
+
+/* containers */
+
+header {
+  width: 100%;
+  padding: 0 3em;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 45px;
+  height: 40px;
+  background-image: url(img/logo.svg);
+  background-position: left;
   background-size: cover;
 }
 
-.users-list {
+.logo:hover {
+  background-image: url(img/logo-accent.svg);
+  background-position: left;
+  background-size: cover;
+  background-color:var(--accent-opacity);
+}
+
+/* type styles */
+
+.reset-list {
+  padding: 0;
+}
+  
+.reset-list  li{
+  list-style: none;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color:var(--primarytxt);
+  /* background-color:var(--accent-opacity); */
+}
+
+a:hover {
+  text-decoration: none;
+  /* background-color:var(--accent); */
+  color:var(--accent);
+}
+  
+
+.tags {
+  display: inline;
+  margin-right: 1em;
+  padding: 0 .3em;
+
+  font-size: small;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--grey);
+  transition: background-color 100ms ease-in 200ms;
+}
+
+.tags:hover {
+  display: inline;
+  margin-right: 1em;
+  padding: 0 .3em;
+
+  font-size: small;
+  font-weight: 400;
+  color: var(--light);
+  background-color: var(--black);
+  transition: background-color 100ms ease-in 300ms;
+}
+
+
+
+
+
+/*---------------------------  first section - project header */
+
+
+
+/* div as image background */
+
+.thefork-header-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/thefork/cover-100.png");
+  background-position: center;
+  background-size: cover;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/* containers */
+
+section {
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 100vh;
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+/* type styles */
+
+.title {
+  max-width: 50%;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.25em;
+}
+
+.intro {
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--primarytxt); 
+}
+
+
+
+
+
+
+/*---------------------------  first section - project brief */
+
+/* containers  */
+
+section article {
+  margin: 1em 0;
+}
+
+
+/* type styles */
+
+.thefork-content h3 {
+  font-weight: 400;
+}
+
+.flex-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
+
 .users-list li {
   padding: 0 5%;
   flex-basis: 20%;
   
   text-align: center;
 }
+
 .users-list img {
   width: 100%;
 }
@@ -61,23 +229,56 @@ section article {
   justify-content: space-between;
 }
 
+
+
+
+
+
+/*---------------------------  first section - project brief */
+
+/* containers  */
+
 .fork-card-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
-.fork-card{
+
+.list-card {
   font-size: .9em;
-  margin:2em 0;
+  margin:2% 0;
   padding: 2%;
 
   width: 25%;
   background-color: white;
 
-  border-radius: 5%;
-  box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+  box-shadow: 0px 0px 30px -14px rgba(199,199,199,1);
+  border-radius: 8%;
+  transition: transform 300ms ease-out 200ms;
 }
+
+.list-card:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in 200ms;
+}
+
+
+.list-card li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
+
+
+.list-card li{
+  margin-left: 20px;
+  list-style: circle;
+}
+
+
+
+
+
+
 
 .fork-solution-bgimg {
   background-image: url("/img/thefork/thefork-grid_3 copy 4.png");

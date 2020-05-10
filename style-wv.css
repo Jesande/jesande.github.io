@@ -139,8 +139,8 @@ nav ul li {
   background-image: url(img/logo-accent.svg);
   background-position: left;
   background-size: cover;
-
 }
+
 /*-------------------------------------------- sections general*/
 
 section {
@@ -305,21 +305,11 @@ footer {
 
 /*-------------------------------------------- the fork */
 
-
-
+/* 
 img {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.behind-results {
-
- /* display: block;
-  border-bottom: 1px solid var(--black);
-  color: var(--black);
-  background-color: white;
-   transition: background-color 200ms ease-in 200ms; */
 }
 
 
@@ -380,4 +370,4 @@ img {
   margin: 2em 0;
   align-self: flex-end;
 
-}
+} */
