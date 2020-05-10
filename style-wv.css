@@ -305,14 +305,7 @@ footer {
 
 /*-------------------------------------------- the fork */
 
-.project-wrapper {
-  margin: 0 auto;
-  max-width: 980px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 img {
   margin: 0;
@@ -322,25 +315,11 @@ img {
 
 .behind-results {
 
-  align-self: flex-end;
-  justify-self: end;
-  /* display: inline-block; */
+ /* display: block;
   border-bottom: 1px solid var(--black);
   color: var(--black);
- /* background-color: white;
+  background-color: white;
    transition: background-color 200ms ease-in 200ms; */
-}
-
-.behind-results:hover {
-  /* padding: 0 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-  
-  color: var(--black);
-  border-bottom: 1px solid var(--light);
- background-color: var(--grey); 
-  /* transition: background-color 200ms ease-in 200ms; */
 }
 
 
@@ -395,4 +374,10 @@ img {
   color: var(--light);
   background-color: var(--black);
   transition: background-color 100ms ease-in 300ms;
+}
+
+.next {
+  margin: 2em 0;
+  align-self: flex-end;
+
 }

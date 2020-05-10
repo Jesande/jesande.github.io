@@ -1,0 +1,86 @@
+:root {
+  --primarytxt:#111111;
+  --light: #FAFAFA;
+  --grey: #dae1e7;
+  --accent: #FEBB01;
+  --black: #1a1a1a;
+}
+
+*{
+ box-sizing: border-box;
+}
+
+.project-wrapper {
+  max-width: 980px;
+}
+
+section {
+
+}
+
+section article {
+  margin-bottom: 1em;
+}
+
+
+.thefork-content h2,h3 {
+  margin: .5em 0;
+}
+.thefork-content h3 {
+  font-weight: 400;
+  /* color: var(--grey) */
+}
+
+
+.thefork-header  {
+  background-image: url("/img/thefork/cover-100.png");
+  background-size: cover;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.users-list li {
+  padding: 0 5%;
+  flex-basis: 20%;
+  
+  text-align: center;
+}
+.users-list img {
+  width: 100%;
+}
+
+.project-team{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fork-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.fork-card{
+  font-size: .9em;
+  margin:2em 0;
+  padding: 2%;
+
+  width: 25%;
+  background-color: white;
+
+  border-radius: 5%;
+  box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+}
+
+.fork-solution-bgimg {
+  background-image: url("/img/thefork/thefork-grid_3 copy 4.png");
+  background-size: cover;
+  color: var(--light);
+}
