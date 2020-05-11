@@ -42,9 +42,6 @@ li{
   margin: .5em 0;
 }
 
-
-/* padding: 0 3em; */
-
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -52,6 +49,8 @@ li{
   margin: 0 auto;
   padding: 0;
 }
+
+
 
 
 /*----------------------- nav */
@@ -89,6 +88,7 @@ header {
   background-color:var(--accent-opacity);
 }
 
+
 /* type styles */
 
 .reset-list {
@@ -113,37 +113,10 @@ a:hover {
 }
   
 
-.tags {
-  display: inline;
-  margin-right: 1em;
-  padding: 0 .3em;
-
-
-  font-weight: 400;
-  color: var(--black);
-  background-color: var(--grey);
-  transition: color 300ms ease-in 100ms;
-  transition: background-color 100ms ease-in 200ms;
-}
-
-.tags:hover {
-  display: inline;
-  margin-right: 1em;
-  padding: 0 .3em;
-
-  font-weight: 400;
-  color: var(--light);
-  background-color: var(--black);
-  transition: color 300ms ease-in 100ms;
-  transition: background-color 100ms ease-in 300ms;
-}
-
-
 
 
 
 /*---------------------------  first section - project header */
-
 
 
 /* div as image background */
@@ -174,6 +147,7 @@ section {
   justify-content: center;  
 }
 
+
 /* type styles */
 
 .title {
@@ -189,7 +163,6 @@ section {
   line-height: 1.25;
   color: var(--primarytxt); 
 }
-
 
 
 
@@ -239,8 +212,6 @@ section article {
 
 
 
-
-
 /*---------------------------  first section - project brief */
 
 /* containers  */
@@ -270,6 +241,7 @@ section article {
   transform: scale(1.1);
   transition: transform 200ms ease-in 200ms;
 }
+
 
 /* type styles */
 
@@ -301,11 +273,6 @@ section article {
   background-position: center;
 }
 
-.features-wrapper {
-  /* background-color: #dbe1e7; */
-}
-
-
 .thefork-solutions-bg .thefork-solutions-title{
   position: absolute;
   top: 30%;
@@ -320,7 +287,6 @@ section article {
   max-width: 100%;
 }
 
-
 .list-with-title li:first-child{
   margin-left: 0;
   list-style: none;
@@ -330,6 +296,7 @@ section article {
   margin-left: 20px;
   list-style: circle;
 }
+
 
 
 
@@ -367,6 +334,14 @@ section article {
   right: 0;
 }
 
+.thefork-end {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/thefork/table-end.png);
+  background-size: cover;
+  background-position: top;
+}
+
 /* type styles */
 
 .features p {
@@ -378,15 +353,40 @@ section article {
 }
 
 
-.thefork-end {
-  width: 100%;
-  height: 100vh;
-  background-image: url(/img/thefork/table-end.png);
-  background-size: cover;
-  background-position: top;
+
+
+/*---------------------------  tags */
+
+/* container */
+
+.tags-wrapper {
+  margin: 3em auto;
+  max-width: 100%;
+  text-align: center;
 }
 
+/* type styles */
+
+.tags {
+  display: inline;
+  margin-right: 1em;
+  padding: 0 .3em;
+
+  font-weight: 400;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.tags:hover {
+  transform: scale(1.1);  
+  background-color: var(--grey);
+}
+
+
+
+
 /*---------------------------  div - next project */
+
 .next {
   max-width: 100%;
   padding: 5%;
@@ -401,7 +401,6 @@ section article {
 }
 
 .socialicon {
-  /* height: 3rem; */
   width: 45px;
   height: 45px;
   display: inline-block;
@@ -415,6 +414,10 @@ section article {
 .behance:hover {
   background-image: url(img/icon-be-hover.svg);
 }
+
+
+
+/*---------------------------  footer */
 
 footer {
   padding: 1em;
