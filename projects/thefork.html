@@ -3,64 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/projects.css">
+  <!-- <link rel="stylesheet" href="/style-wv.css"> -->
+  <link rel="stylesheet" href="/thefork.css">
 
-  <title>Costumization tool optimization</title>
+  <title>Customization tool optimization</title>
+
+  <!-- scroll js -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({ duration: 500 })
+    </script>
+  <!-- scroll js -->
 </head>
+
 <body>
+
+<header>
+  <a href="/index.html" class="logo"> </a>
   <nav>
-    <a href="/index.html">[ Jesande ]</a>
-    <a href="/index.html"> Return ←</a>
-  </nav> 
+    <a href="/index.html">Return ←</a>
+  </nav>
+</header>
 
   
-<main>
-  <header>
-    <h1>Ux improvement and redesign UI</h1>
-    <a id="results-btn" href="#">Behind the results +</a>
-  </header>
+<div class="thefork-header-bg">  </div>
 
-
-<article id="results" class="behind-content">
-  <h2>:brief</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas assumenda voluptatem quas quisquam. Tempore nemo molestias sunt nisi blanditiis officiis excepturi exercitationem magni provident dolorem mollitia, unde, harum iste.</p>
-  <p>Create a digital strategy for Magis Company by identifying the brand’s requirements and opportunities for development focusing on the customization tool of their website.</p>
-  <h2>:solutions</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt perferendis similique cumque, veritatis cupiditate inventore expedita accusantium voluptatum assumenda doloremque atque eum obcaecati, recusandae modi aperiam quisquam voluptates error!
-  Voluptate eos error saepe recusandae perspiciatis alias est perferendis eligendi nisi sapiente. Adipisci porro ut sequi, rem rerum ratione asperiores ducimus itaque. Temporibus architecto ea velit nam vero maxime praesentium!
-  Nesciunt aliquid doloribus voluptatem animi ipsum maiores numquam quae, alias tempore aliquam. Incidunt quia cupiditate ut impedit illo ducimus iusto nostrum unde, esse animi blanditiis eum nobis. Tempore, neque obcaecati!
-  Consequuntur quis fugit necessitatibus nihil, in illo modi facilis quibusdam nostrum? Vitae, harum. Placeat aliquam deleniti et similique sit incidunt perferendis, amet eligendi nisi inventore maiores tempore aliquid consequuntur adipisci!</p>
-  <h2>:Team</h2>
-  <p>@Benedetta</p>
-  <p>@Adele</p>
-  <h2>:mentor</h2>
-  <p>@Catani</p>
-</article>
-  <div class="wrapper">
-  <section class="results">
-    <img src="/img/thefork/1.jpg" alt="">
-    <img src="/img/thefork/2.jpg" alt="">
-    <img src="/img/thefork/3.jpg" alt="">
-    <img src="/img/thefork/4.jpg" alt="">
-    <img src="/img/thefork/5.jpg" alt="">
-    <img src="/img/thefork/6.jpg" alt="">
+  <section class="thefork-header"> <!-- the project title -->
+    <h1 class="title">UX improvement and UI re-design</h1>
+    <h2 class="intro">The Fork app</h2>
   </section>
 
-</main>
+
+  <section> <!-- the brief -->
+    
+    <article>  <!-- brief info -->
+      <h2>The brief</h2>  
+      <p class="intro">Redesign The Fork app interface with the goal of increasing users’ adoption and usage.</p> <br>
+      <h2>Who is The Fork?</h2>  
+      <p class="intro">The Fork is an app/website that helps people find and book a table at a restaurant. It provides restaurant reviews, menu, pricing, hours and provides great deals (up to 50% off).</p>
+    </article>
+
+    <article class="project-team">
+      <ul class="reset-list ">
+        <li><h3>Team</h3></li>
+        <li><a>@Benedetta</a> </li>
+        <li><a>@Adele</a></li>
+      </ul>
+      <ul class="reset-list">
+        <li><h3>Mentor</h3></li>
+        <li><a>@Catani</a></li>
+      </ul>
+    </article>
+
+  </section>
+
+
+  <section> <!-- the research -->
+
+    <article> <!-- the research  title-->
+      <h2>The research</h2>
+      <p class="intro">Who are the users?</p>
+    </article>
+
+    <article> <!-- the research  users -->
+      <ul class="reset-list flex-list users-list">
+        <li><img src="/img/thefork/icon/student.svg" alt=""></li>
+        <li><img src="/img/thefork/icon/couple-01.svg" alt=""></li>
+        <li><img src="/img/thefork/icon/standar.svg" alt=""></li>
+        <li><img src="/img/thefork/icon/tourist.svg" alt=""></li>
+        <li><img src="/img/thefork/icon/business.svg" alt=""></li>
+      </ul>
+      <ul class="reset-list flex-list users-list">
+        <li>Student</li>
+        <li>Couple</li>
+        <li>Standard</li>
+        <li>Tourist</li>
+        <li>Business man</li>
+      </ul>
+    </article>
+  
+  </section>
+
+
+<div class="thefork-solutions-bg"> 
+
+  <article class="thefork-solutions-title"> <!-- the solutions -->
+    <ul class="list-with-title">
+      <li><h2 class="title">Our solutions</h2></li>
+      <li>User friendly approach</li>
+      <li>Easy and understandable flow to book a table </li>
+      <li>Save user’s time</li>
+      </ul>
+    </article>
+</div>  
+
+<div class="features-wrapper"> <!-- new features -->
+<section > 
+  <article class="intelligent-map">
+    <h2>Inteligent map</h2>
+    <p>Choose a specific location on the map by drawing it.</p>
+  </article>
+  <article>
+    <h2>The Fork Comunity</h2>
+    <p>Find the reviews of gastronomic experts, food bloggers, and known chefs to know more about the best restaurants in town, and share your reviews on the restaurants you have booked with other ursers.</p>
+    <img src="/img/thefork/comunity.png" alt="">
+  </article>
+  <article class="save-search">
+    <div class="save-search-info">
+      <h2>Save your search</h2>
+      <p>Save your filters settings and personalize your feed. Receive notifications on any update or restaurant offers. </p>
+    </div>
+  </article>  
+  <article>
+    <h2>Pre-order</h2>
+    <p>Save time!Pre-order and pay through the app.</p>
+    <img src="/img/thefork/preorder.png" alt="">
+  </article>
+</section>
 </div>
-<footer> <a href="magis.html">Next project ➝ </a> 
-</footer>
+<div class="thefork-end"> </div>
+
+<article class="tags-wrapper"> <!-- tags -->
+  <p class="tags"> Research</p>
+  <p class="tags"> Wireframe</p>
+  <p class="tags"> User journey</p>
+  <p class="tags"> Prototype</p>
+  <p class="tags"> User testing</p>
+  <p class="tags"> UX</p>
+  <p class="tags"> UI</p>
+
+</article>
+
+<div class="next">
+  <article>
+    <p>See this project also in </p>
+    <a href="" class="socialicon behance"> </a>
+  </article>
+  <a href="magis.html" >Next project ➝ </a> 
+</div>
+
+
+
+<footer> | © Jesande 2020 | </footer>
+
 
 <script>
-  var resultsBtn = document.getElementById ("results-btn");
-  var results = document.getElementById("results");
-
-  resultsBtn.addEventListener("click", openResults);
-  function openResults() {
-    results.classList.toggle("behind-content-visible");
-  }
-
+  ScrollReveal().reveal('h1')
+  ScrollReveal().reveal('.intro', { delay: 250 })
+  ScrollReveal().reveal('.project-content')
+  ScrollReveal().reveal('.project-info')
+  ScrollReveal().reveal('h3', { delay: 250 })
+  ScrollReveal().reveal('p', { delay: 350 })
+  ScrollReveal().reveal('a', { delay: 350 })
 </script>
 
 </body>
+
 </html>

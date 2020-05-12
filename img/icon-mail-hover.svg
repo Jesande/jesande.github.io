@@ -4,13 +4,14 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128"
 	 style="enable-background:new 0 0 128 128;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#5834B3;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#14f501;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FEBB01;}
 </style>
-<circle class="st0" cx="64.2" cy="62.2" r="36.2"/>
-<g id="Mail">
-	<path id="Oval-1" class="st1" d="M64,0C28.7,0,0,28.7,0,64s28.7,64,64,64s64-28.7,64-64S99.3,0,64,0z M94.7,81.8V43.5L72.4,65.2
-		L94.7,81.8z M33.3,81.8l22.4-16.6L33.3,43.5V81.8z M58.7,68.1L33.3,84.5h61.4L69.3,68.1L64,73.3L58.7,68.1z M35.1,43.5L64,66.7
-		l28.9-23.2C92.9,43.5,35.1,43.5,35.1,43.5z"/>
+<g id="Page-1">
+	<g id="Mail">
+		<path id="Oval-1" class="st0" d="M64.5,0.5c-35.3,0-64,28.7-64,64s28.7,64,64,64s64-28.7,64-64S99.8,0.5,64.5,0.5z M64.5,8.2
+			C33.4,8.2,8.2,33.4,8.2,64.5s25.2,56.3,56.3,56.3s56.3-25.2,56.3-56.3S95.6,8.2,64.5,8.2z M95.2,82.3V44L72.9,65.7L95.2,82.3z
+			 M33.8,82.3l22.4-16.6L33.8,44V82.3z M59.2,68.6L33.8,85h61.4L69.8,68.6l-5.3,5.2L59.2,68.6z M35.6,44l28.9,23.2L93.4,44
+			C93.4,44,35.6,44,35.6,44z"/>
+	</g>
 </g>
 </svg>
