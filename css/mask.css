@@ -9,114 +9,16 @@
   --black: #1a1a1a;
 }
 
-* {
-  /* border: 1px solid green; */
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-/* global */
-
-body {
-  padding: 0;
-  margin: 0;
-  
-  background-color: var(--light);
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5em;
-  color: var(--primarytxt);
-}
-
-h1, h2, h3, h4 {
-  margin: .5em 0;
-}
-
-p{
-  margin: .5em 0;
-}
-
-li{
-  margin: .5em 0;
-}
-
-
-
-
-/*----------------------- nav */
-
-/* containers */
-
-header {
-  width: 100%;
-  padding: 0 3em;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 70px;
-  z-index: 1;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 45px;
-  height: 40px;
-  background-image: url(img/logo.svg);
-  background-position: left;
-  background-size: cover;
-}
-
-.logo:hover {
-  background-image: url(img/logo-accent.svg);
-  background-position: left;
-  background-size: cover;
-  background-color:var(--accent-opacity);
-}
-
-
-/* type styles */
-
-.reset-list {
-  padding: 0;
-}
-  
-.reset-list  li{
-  list-style: none;
-}
-
-a {
-  font-weight: 400;
-  text-decoration: none;
-  color:var(--primarytxt);
-  /* background-color:var(--accent-opacity); */
-}
-
-a:hover {
-  text-decoration: none;
-  /* background-color:var(--accent); */
-  color:var(--accent);
-}
-  
-
-
-
-
-/*---------------------------  first section - project header */
+/*---------------------------  project header */
 
 
 /* div as image background */
 
-.thefork-header-bg {
+.header-bg {
   width: 100%;
   height: 100vh;
-  background-image: url("/img/thefork/cover.png");
+  background-image: url("/img/mask/cover.png");
   background-position: center;
   background-size: cover;
   
@@ -208,7 +110,7 @@ section article {
 
 /* containers  */
 
-.fork-card-container {
+.card-container {
   margin: 4em auto;
 
   display: flex;
@@ -223,7 +125,8 @@ section article {
   padding: 3%;
 
   flex-basis: 250px;
-  flex-shrink: 100px;
+  flex-grow: 2;
+  flex-shrink: 1;
   background-color: white;
 
   box-shadow: 0px 0px 30px -14px rgba(199,199,199,1);
@@ -252,22 +155,47 @@ section article {
 
 
 
+/*---------------------------  user journey */
+.journey-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.tags-dark {
+  padding: 2px;
+  margin: 3px;
+
+  background-color: var(--grey);
+  color: var(--primarytxt);
+}
+
+.doble-column {
+  grid-column: span 2;
+}
+
+
 /*---------------------------  second section - project solutions */
 
 /* containers  */
-.thefork-solutions-bg {
+.solutions-bg {
   width: 100%;
   height: 80vh;
   
   position: relative;
   z-index: -1;
 
-  background-image: url("/img/thefork/solutions-bg.png");
+  background-image: url("/img/mask/proposal-bg.png");
   background-size: cover;
   background-position: center;
 }
 
-.thefork-solutions-bg .thefork-solutions-title{
+.solutions-title{
   position: absolute;
   top: 30%;
   right: 0;
@@ -299,40 +227,11 @@ section article {
 
 /* containers  */
 
-.intelligent-map {
-  width: 100%;
-  height: 80vh;
-  background-image: url(/img/thefork/intelligent-map.png);
-  background-size: cover;
-  background-position: right;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.save-search {
-  width: 100%;
-  height: 90vh;
-  background-image: url(/img/thefork/save-search.png);
-  background-size:cover;
-  background-position:left;
-
-  position: relative;
-}
-
-.save-search-info {
-  width: 30%;
-  
-  position: absolute;
-  top: 20%;
-  right: 0;
-}
-
-.thefork-end {
+.end {
   width: 100%;
   height: 100vh;
-  background-image: url(/img/thefork/table-end.png);
+  background-image: url(/img/mask/end.png);
   background-size: cover;
   background-position: top;
 }
