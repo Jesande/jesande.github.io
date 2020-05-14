@@ -35,43 +35,48 @@ grey-txt-light: #8F8F94
   box-sizing: border-box;
 }
 
+
 body {
   padding: 0;
   margin: 0;
-
+  
   background-color: var(--light);
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
   font-size: 18px;
-  color: var(--txtgrey);
+  font-weight: 300;
+  line-height: 1.5em;
   color: var(--primarytxt);
 }
 
-ul{
-  padding: 0;
+img {
+  display: block;
 }
 
-li{
-  list-style: none;
+h1, h2, h3, h4 {
+  margin: .5em 0;
+  line-height: 1.5em;
 }
 
-/*-------------------------------------------- Typo styles */
-
-
-.title {
+h1, .h1 {
+  max-width: 50%;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1.15em;
 }
 
-.intro {
-  font-size: 2em;
+h2, .h2 {
+  font-size: 1.9rem;
   font-weight: 300;
   line-height: 1.25;
   color: var(--primarytxt); 
-  font-size: 1.9rem;
 }
 
-a {
+
+p, li{
+  margin: .5em 0;
+}
+
+a, .bold {
   font-weight: 400;
   text-decoration: none;
   color:var(--primarytxt);
@@ -82,22 +87,21 @@ a:hover {
   color:var(--accent);
 }
 
-.intro a{
-  color:var(--accent);
+
+.reset-list {
+  padding: 0;
+}
+  
+.reset-list  li{
+  list-style: none;
 }
 
-header a {
-  text-decoration: none;
-  font-weight: normal;
-}
 
-header a:hover {
-  color:var(--accent);
-}
-
+/*-------------------------------------------- Typo styles */
+/* 
 .project-container a {
   font-weight: 300;
-}
+} */
 /*-------------------------------------------- header */
 
 
@@ -141,9 +145,29 @@ nav ul li {
   background-size: cover;
 }
 
+
+nav#dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+nav#dot-nav a {
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin: 10px;
+}
+
+nav#dot-nav a.active, nav#dot-nav a:first-child {
+  background: var(--black);
+}
+
 /*-------------------------------------------- sections general*/
 
-section {
+section, .about-content {
   min-height: 100vh;
   padding: 0 3em;
   display: flex;
@@ -151,7 +175,13 @@ section {
   justify-content: center;
 }
 
+#work, #about, #contact {
+  min-height: 80vh;
+}
 
+#work, #about .section-content{
+  max-width: 70%;
+}
 
 /*-------------------------------------------- home */
 
@@ -217,6 +247,7 @@ section {
 /*-------------------------------------------- about */
 
 .about-content {
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -234,21 +265,8 @@ min-width: 25%;
 }
 
 
-h4 {
-  font-size: 1rem;
-  margin: 0 0 .9em;
-  font-weight: normal ;
-  color: #a1a1a1;
-}
-
-.about-abstrat p{
+.about-abstrat,.about-aside p:nth-child(even){
   margin:0 0 1.5rem;
-  font-weight: 200;
-}
-
-.about-aside p{
-  margin:0 0 1.5rem;
-  font-weight: 200;
 }
 
 
@@ -310,73 +328,3 @@ footer {
   font-size: small;
   text-align: center;
 }
-
-
-/*-------------------------------------------- the fork */
-
-/* 
-img {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
-.behind-btn {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.behind-btn li:first-child {
-  margin-right: 1em;
-}
-
-
-.project-info {
-  margin: 0;
-  display: none;
-}
-
-.project-info-visible {
-  display: block;
-} 
-
-.project-info article {
- margin-bottom: 3em;
-}
-
-.project-info h3 {
-  margin-bottom: .5em;
-}
-
-.tags {
-  display: inline;
-  margin-right: 1em;
-  padding: 0 .3em;
-
-  font-size: small;
-  font-weight: 400;
-  color: var(--black);
-  background-color: var(--grey);
-  transition: background-color 100ms ease-in 200ms;
-}
-
-.tags:hover {
-  display: inline;
-  margin-right: 1em;
-  padding: 0 .3em;
-
-  font-size: small;
-  font-weight: 400;
-  color: var(--light);
-  background-color: var(--black);
-  transition: background-color 100ms ease-in 300ms;
-}
-
-.next {
-  margin: 2em 0;
-  align-self: flex-end;
-
-} */

@@ -24,29 +24,30 @@
 <header>
   <a href="#home" class="logo"> </a>
   <nav>
-    <ul>
+    <ul class="reset-list">
       <li><a href="#work">Projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a> </li>
     </ul>
   </nav>
 </header>
+<nav id="dot-nav"></nav>
 
 <section id="home">
   <article class="section-content">
-    <p class="title">Welcome!</p>
-    <h1 class="intro">My name is Jessica Delgado and I’m a graphic/web designer. <br> Let me show you my most recent projects.</h1>
+    <p class="h1">Welcome!</p>
+    <h1 class="h2">My name is Jessica Delgado and I’m a graphic/web designer. Let me show you my most recent projects.</h1>
   </article>
 </section>
 
 <section id="work">
   <article class="section-content">
-    <h2 class="title">Projects</h2>
-    <p class="intro">During my Master in Web and Digital Design at SPD, I've developed these main projects following specific requirements.</p>
+    <h2 class="h1">Projects</h2>
+    <p class="h2">During my Master in Web and Digital Design at SPD, I've developed these main projects following specific requirements.</p>
   </article>
 </section>
 
-<section id="project-list">
+<div id="project-list">
 
   <article class="project-container">
     <a href="projects/thefork.html">
@@ -72,6 +73,19 @@
     </a> 
   </article>
 
+  
+  <article class="project-container">
+    <a href="projects/beautymask.html">
+      <figure class="project-content">
+        <img src="img/html-cover.png" alt="The fork app" class="project-img"> 
+        <figcaption class="project-label-container">
+          <h3>Digital Service Design</h3>  
+          <p>[Coming soon...]</p>
+        </figcaption>
+      </figure>
+    </a> 
+  </article>
+  
   <article class="project-container">
     <a href="#">
       <figure class="project-content">
@@ -83,20 +97,7 @@
       </figure>
     </a> 
   </article>
-
-  <article class="project-container">
-    <a href="projects/beautymask.html">
-      <figure class="project-content">
-      <img src="img/html-cover.png" alt="The fork app" class="project-img"> 
-        <figcaption class="project-label-container">
-            <h3>Digital Service Design</h3>  
-            <p>[Coming soon...]</p>
-        </figcaption>
-      </figure>
-    </a> 
-  </article>
-
-  <article class="project-container">
+  <!-- <article class="project-container">
     <a href="#">
       <figure class="project-content">
       <img src="img/html-cover.png" alt="The fork app" class="project-img"> 
@@ -106,52 +107,43 @@
         </figcaption>
       </figure>
     </a> 
-  </article>
+  </article> -->
 
+</div>
 </section>
 
 
 <section id="about">
   <article class="section-content">
-    <h2 class="title">About me</h2>
-    <p class="intro">Let’s see some details of my profesional life that you might find interesting.</p>
+    <h2 class="h1">About me</h2>
+    <p class="h2">Let’s see some details of my profesional life that you might find interesting.</p>
   </article>
 </section>
 
-<section class="about-content">
-  
-  <article class="about-abstrat">
-    <p> After working for more than 10 years as a <a href="#">graphic designer</a> (as an employee or freelancer) or even as a <a href="#"> business owner</a>, I have learned the importance of team-work, commitment and communication with my colleagues and superiors and developed skills to plan, develop, and deliver design/visual solutions. </p>
-    <p> In order to keep learning and expand my knowledge as a designer, I decided to move out of Colombia and come to Italy for studying a master in a field that I’ve been curious about: Web and Digital Design. </p> 
+  <div class="about-content">
+    <article class="about-abstrat">
+      <p> After working for more than 10 years as a <a href="#">graphic designer</a> (as an employee or freelancer) or even as a <a href="#"> business owner</a>, I have learned the importance of team-work, commitment and communication with my colleagues and superiors and developed skills to plan, develop, and deliver design/visual solutions. </p>
+      <p> In order to keep learning and expand my knowledge as a designer, I decided to move out of Colombia and come to Italy for studying a master in a field that I’ve been curious about: Web and Digital Design. </p> 
+      <a href="#" > download CV ↓ </a>
+    </article>
 
-    <a href="#" > download CV ↓ </a>
-  </article>
-
-  <article class="about-aside">
-    <!-- <div class="softwareskills"> -->
-      <h4>Software Skills</h4>
+    <article class="about-aside">
+      <p class="bold"> Software Skills</p>
       <p>‘Illustrator’ ‘InDesign’ ‘Photoshop’ 'After Effects' ‘HTML’ ‘CSS’ ‘Sketch’ ‘XD’  </p>
-    <!-- </div>
-    <div class="languages"> -->
-      <h4>Languages</h4>
+      <p class="bold"> Languages</p>
       <p>Spanish (native), <br> English (intermediate-high), Italian (beginner).</p>
-    <!-- </div>
-      
-    <div class="coreskills"> -->
-      <h4>Core Skills</h4>
+      <p class="bold"> Core Skills</p>
       <p>'Teamwork' 'Project Management' 'Commitment' 'Communication' 'Supervising' 'Organisational skills' 'Design' 'Precision' 'Foreign languages' </p>
-    <!-- </div>ç -->
-    
-  </article>
-    
-</section>
+    </article>
+  </div>
+
 
 <section id="contact">
   <article class="section-content">
 
-  <h2 class="title">Contact </h2>
-  <p class="intro">You can get in touch with me through:</p>
-  <ul class="socialcontainer">
+  <h2 class="h1">Contact </h2>
+  <p class="h2">You can get in touch with me through:</p>
+  <ul class="reset-list socialcontainer">
     <li> <a href="" class="socialicon linkedin"> </a></li> 
     <li> <a href="" class="socialicon behance"> </a></li> 
     <li> <a href="" class="socialicon mail"> </a></li> 
@@ -165,9 +157,15 @@
 </footer>
 
 <script>
-  ScrollReveal().reveal('.title')
-  ScrollReveal().reveal('.intro', { delay: 250 })
-  ScrollReveal().reveal('.project-content', { delay: 500 })
+  // ScrollReveal().reveal('h1')
+  // ScrollReveal().reveal('.intro', { delay: 250 })
+  // ScrollReveal().reveal('.intro')
+  // ScrollReveal().reveal('.project-content', { delay: 500 })
 </script>
+  <script src="/js/dot-nav-min.js">
+    dotNav('section', 'easeInOutQuad');
+
+  </script>
+
 </body>
 </html>
