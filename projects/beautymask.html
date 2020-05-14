@@ -9,10 +9,10 @@
   <title>Digital Service Design</title>
 
   <!-- scroll js -->
-  <!-- <script src="https://unpkg.com/scrollreveal@4"></script>
-  <script>
-    ScrollReveal({ duration: 200 })
-    </script> -->
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+	<script>
+    ScrollReveal({ duration: 700 })
+  </script> 
   <!-- scroll js -->
 </head>
 
@@ -25,10 +25,10 @@
   </nav>
 </header>
 
-  
-<div class="header-bg">  </div>
+<div class="header-bg"></div>
 
-  <section> <!-- the project title -->
+<nav id="dot-nav"></nav>
+<section> <!-- the project title -->
     <img src="/img/mask/logo.png" alt="" class="logo-mask">
     <h1>Digital Service Design</h1>
     <h2>4 days workshop</h2>
@@ -59,58 +59,32 @@
 
   <section class="persona-section"> <!-- the research -->
   <div class="persona-bg"></div>
-    <article> <!-- the research  title-->
+    <article class="user-needs"> <!-- the research  title-->
       <h3>The research - User persona</h3>
       <h2>Serena</h2>
-      <p>(45 years / Interior Designer)</p>
+      <p>Interior Designer, 45 years</p>
     </article>
     
-    <article>
+    <article class="user-needs">
       <ul class="list-with-title">
         <li><h3>Activities</h3></li>
         <li>Getting expert advice</li>
         <li>Daily skincare routine</li>
         <li>Face mask once a week</li>
       </ul> 
+    </article>
+    <article  class="user-needs">
       <ul class="list-with-title">
         <li><h3>Needs</h3></li>
         <li>Find a proper expert advisor</li>
         <li>Personalized product for the beauty routine</li>
         <li>Suitable face mask</li>
       </ul>
-  </article>
-  <article>
+    </article>
+    <article>
       <h3 class="quote">“Having a healthy skin makes me feel beautiful”</h3>
     </article>
-  <!-- </section>
-  <section> -->
-    <!-- <article>  
-      <h2>Serena's User Journey</h2>  
-      <div class="journey-container">
-        <p>Gathering information</p>
-        <p>Getting expert advice</p>
-        <p>Do a daily routine</p>
-        <p>Getting advice for face mask</p>
-        <p>Finding ingredients</p>
-        <p>Do weekly routine formask</p>
-        <p>See the results</p>
-        
-        <p>:(</p>
-        <p>:|</p>
-        <p>:)</p>
-        <p>:(</p>
-        <p>:|</p>
-        <p>:|</p>
-        <p>:(</p>
-        
-        <p class="tags-dark">Sometimes it takes time to gather information, which is boring and can be confusing</p>
-        <p class="tags-dark">Expert advice is very expensive</p>
-        <p class="tags-dark">I love taking care of my skin</p>
-        <p class="tags-dark">To get information for personalized face masks you have to spend a lot of time that you don't always find</p>
-        <p class="tags-dark doble-column">When I have time to make the mask, I do not always have the ingredients on hand so I postpone it.</p>
-        <p class="tags-dark">Results are not as expected </p>
-      </div>
-    </article> -->
+  
     <article class="card-container">
       <ul class="list-card">
         <li><h4>Challenges</h4></li>
@@ -126,10 +100,12 @@
   </section>
   
 <div class="solutions-bg"> 
+  <section>
   <article class="solutions-title"> <!-- the solutions -->
     <h2> <strong> Beauty Mask </strong>is the only <strong>personal assistant skill</strong> that gives you personalized face mask ingredients for <strong> skin focused people </strong></h2>
       <p>Beauty Mask Skill uses the GPS to detect weather and pollution of the user’s location and thanks to the AI identifies the possible factors that are affecting the user’s skin and provides the best possible solution to repair or prevent damages.</p>
     </article>
+  </section>
 </div>  
 
 <!-- <section> 
@@ -179,17 +155,15 @@
 
 <footer> | © Jesande 2020 | </footer>
 
-<!-- 
 <script>
   ScrollReveal().reveal('h1')
-  ScrollReveal().reveal('.intro', { delay: 250 })
-  ScrollReveal().reveal('.project-content')
-  ScrollReveal().reveal('.project-info')
-  ScrollReveal().reveal('h3', { delay: 250 })
-  ScrollReveal().reveal('p', { delay: 350 })
-  ScrollReveal().reveal('a', { delay: 350 })
-</script> -->
-
+  ScrollReveal().reveal('h2')
+  ScrollReveal().reveal('h3')
+  ScrollReveal().reveal('p')
+</script>
+  <script src="/js/dot-nav-min.js">
+    dotNav('section', 'easeInOutQuad');
+  </script>
 </body>
 
 </html>

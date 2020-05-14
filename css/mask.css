@@ -29,6 +29,13 @@
   z-index: -1;
 }
 
+p{
+  margin: 0;
+}
+
+li{
+  margin: 0;
+}
 
 /* containers */
 
@@ -36,7 +43,7 @@ section {
   margin: 0 auto;
   max-width: 1020px;
   min-height: 100vh;
-  /* padding: 0 3em; */
+  padding: 0 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;  
@@ -48,6 +55,12 @@ section article {
 }
 
 
+/* .user-needs {
+  margin:0 0  1em 0 ;
+}
+.user-needs h2,h3{
+  margin:0 0 .3em 0;
+} */
 /* type styles */
 
 .users-list li {
@@ -67,8 +80,10 @@ section article {
 /*---------------------------  first section - project brief */
 
 /* containers  */
+
 .persona-section {
   position: relative;
+  margin-bottom: 3em;
 }
 
 .persona-bg {
@@ -109,7 +124,7 @@ section article {
   padding: 3%;
 
   flex-basis: 40%;
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 1;
   background-color: white;
 
