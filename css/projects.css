@@ -66,6 +66,18 @@ li{
   list-style: none;
 }
 
+
+.list-with-title li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-with-title li{
+  margin-left: 20px;
+  list-style: circle;
+}
+
+
 a {
   font-weight: 400;
   text-decoration: none;
@@ -77,6 +89,18 @@ a:hover {
   color:var(--accent);
 }
   
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+img {
+  display: block;
+}
+
 
 /*----------------------- nav */
 
@@ -138,6 +162,18 @@ header {
   transform: scale(1.1);  
   background-color: var(--grey);
 }
+
+.quote {
+  display:block;
+  margin: .5em;
+  padding: .3em;
+
+  text-align: center;
+  color: var(--black);
+  background-color: var(--grey);
+  border: 1px solid var(--black);
+}
+
 /*-------------------------------------------- footer */
 
 footer {
