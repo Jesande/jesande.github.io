@@ -122,17 +122,28 @@ nav#dot-nav {
 }
 
 nav#dot-nav a {
-  border: 1px solid var(--black);
+  border: 1px solid var(--grey);
+  background-color:  var(--grey);
   border-radius: 50%;
   width: 8px;
   height: 8px;
+  display: block;
+  margin: 10px;
+  /* padding: 10px; */
+}
+
+nav#dot-nav a:hover {
+  background-color:  var(--grey);
+  border: 1px solid var(--black);  
+  border-radius: 50%;
   display: block;
   margin: 10px;
 }
 
 /* nav#dot-nav a.active, nav#dot-nav a:first-child { */
 nav#dot-nav a.active {
-  background: var(--black);
+  background: var(--black);  
+  border: 1px solid var(--black);  
 }
 
 /*-------------------------------------------- sections general*/
@@ -230,7 +241,9 @@ section, .about-content {
 
   width: 400px;
 }
-
+.project-label h2{
+  font-weight: 500;
+}
 
 .thefork-container {
   background-image: url(img/thefork/cover-01.png);

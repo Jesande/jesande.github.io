@@ -11,10 +11,10 @@
   <title>Jesande - Portfolio</title>
 
   <!-- scroll js -->
-  <!-- <script src="https://unpkg.com/scrollreveal@4"></script>
+   <script src="https://unpkg.com/scrollreveal@4"></script>
 	<script>
-    ScrollReveal({ duration: 500 })
-  </script> -->
+    ScrollReveal({ duration: 700 })
+  </script> 
 
 <!-- scroll js -->
 </head>
@@ -23,7 +23,7 @@
 
 <header>
   <a href="#home" class="logo"> </a>
-  <nav>
+  <nav id="menu">
     <ul class="reset-list">
       <li><a href="#work">Projects</a></li>
       <li><a href="#about">About</a></li>
@@ -64,7 +64,7 @@
   <a href="projects/thefork.html" class="project-link">
     <article class="project-container thefork-container">
       <div class="project-label">
-        <h2>UX improvement and UI redesign</h2>  
+        <h2> UX improvement <br> and UI redesign</h2>
         <p>[UX/UI]</p>
       </div>
     </article>
@@ -72,7 +72,7 @@
   <a href="projects/magis.html" class="project-link">
     <article class="project-container magis-container">
       <div class="project-label">
-        <h2>Configurator tool optimization</h2>  
+        <h2> Configurator tool optimization</h2>
         <p>[Digital Strategy]</p>
       </div>
     </article>
@@ -80,9 +80,8 @@
   <a href="projects/beautymask.html" class="project-link">
     <article class="project-container mask-container">
       <div class="project-label">
-        <h2>Digital Service Design</h2>  
-        <p>[Coming soon...]</p>
-      </div>
+        <h2>Beauty Mask Skill</h2>
+        <p>[Digital service design]</p>
     </article>
   </a>
 
@@ -134,10 +133,10 @@
 </footer>
 
 <script>
-  // ScrollReveal().reveal('h1')
-  // ScrollReveal().reveal('.intro', { delay: 250 })
-  // ScrollReveal().reveal('.intro')
-  // ScrollReveal().reveal('.project-content', { delay: 500 })
+  ScrollReveal().reveal('h1')
+  ScrollReveal().reveal('h2')
+  ScrollReveal().reveal('h3')
+  ScrollReveal().reveal('p')
 </script>
   <script src="/js/dot-nav-min.js">
     dotNav('section', 'easeInOutQuad');
