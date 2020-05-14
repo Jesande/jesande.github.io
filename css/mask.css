@@ -22,6 +22,7 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   
   position: absolute;
   top: 0;
@@ -194,6 +195,7 @@ section article {
   background-position: top left;
   background-repeat: no-repeat;
   background-color: #CBD5F3;
+  background-attachment: fixed;
 }
 
 .solutions-title{

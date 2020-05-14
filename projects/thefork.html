@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="/style-wv.css"> -->
-  <link rel="stylesheet" href="/thefork.css">
+  <link rel="stylesheet" href="/css/thefork.css">
 
   <title>UX improvement and UI redesign</title>
 
   <!-- scroll js -->
   <script src="https://unpkg.com/scrollreveal@4"></script>
-  <script>
-    ScrollReveal({ duration: 500 })
-    </script>
+	<script>
+    ScrollReveal({ duration: 700 })
+  </script> 
   <!-- scroll js -->
 </head>
 
@@ -24,7 +24,7 @@
     <a href="/index.html">Return ←</a>
   </nav>
 </header>
-
+<nav id="dot-nav"></nav>
   
 <div class="thefork-header-bg">  </div>
 
@@ -168,16 +168,15 @@
 
 <footer> | © Jesande 2020 | </footer>
 
-
 <script>
   ScrollReveal().reveal('h1')
-  ScrollReveal().reveal('.intro', { delay: 250 })
-  ScrollReveal().reveal('.project-content')
-  ScrollReveal().reveal('.project-info')
-  ScrollReveal().reveal('h3', { delay: 250 })
-  ScrollReveal().reveal('p', { delay: 350 })
-  ScrollReveal().reveal('a', { delay: 350 })
+  ScrollReveal().reveal('h2')
+  ScrollReveal().reveal('h3')
+  ScrollReveal().reveal('p')
 </script>
+  <script src="/js/dot-nav-min.js">
+    dotNav('section', 'easeInOutQuad');
+  </script>
 
 </body>
 

@@ -9,6 +9,322 @@
   --black: #1a1a1a;
 }
 
+/*---------------------------  first section - project header */
+img {
+  display:block;
+}
+
+/* div as image background */
+
+.thefork-header-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("//img/thefork/cover.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/*-------------------------------------------- dots nav*/
+
+nav#dot-nav {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+nav#dot-nav a {
+  border: 1px solid var(--grey);
+  background-color:  var(--grey);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin: 10px;
+  /* padding: 10px; */
+}
+
+nav#dot-nav a:hover {
+  background-color:  var(--grey);
+  border: 1px solid var(--black);  
+  border-radius: 50%;
+  display: block;
+  margin: 10px;
+}
+
+/* nav#dot-nav a.active, nav#dot-nav a:first-child { */
+nav#dot-nav a.active {
+  background: var(--black);  
+  border: 1px solid var(--black);  
+}
+
+/* containers */
+
+section {
+  margin: 0 auto;
+  max-width: 1020px;
+  min-height: 100vh;
+  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.users-list-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; 
+}
+
+.users-list {
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.users-list ul{
+  flex-basis: 150px;
+  flex-grow:2;
+  flex-shrink:1;
+  text-align: center;
+}
+
+.users-list-container img{
+  height: 90px;
+}
+
+
+
+/*---------------------------  first section - project brief */
+
+/* containers  */
+
+.fork-card-container {
+  margin: 4em auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* align-content: stretch;
+  align-items: stretch; */
+}
+
+.list-card {
+  margin:2%;
+  padding: 3%;
+
+  flex-basis: 250px;
+  flex-shrink: 100px;
+  background-color: white;
+
+  box-shadow: 0px 0px 30px -14px rgba(199,199,199,1);
+  border-radius: 10px;
+  transition: transform 300ms ease-out 200ms;
+}
+
+.list-card:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in 200ms;
+}
+
+
+/* type styles */
+
+.list-card li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-card li{
+  margin-left: 20px;
+  list-style: circle;
+}
+
+
+
+
+/*---------------------------  second section - project solutions */
+
+/* containers  */
+.thefork-solutions-bg {
+  width: 100%;
+  height: 80vh;
+  
+  position: relative;
+  z-index: -1;
+
+  background-image: url("//img/thefork/solutions-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.thefork-solutions-bg .thefork-solutions-title{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 44%;
+}
+
+
+/* type styles */
+
+.thefork-solutions-bg  h2 {
+  max-width: 100%;
+}
+
+.list-with-title li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-with-title li{
+  margin-left: 20px;
+  list-style: circle;
+}
+
+
+
+
+
+/*---------------------------  second section - project solutions */
+
+/* containers  */
+
+.intelligent-map {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/img/thefork/intelligent-map.png);
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.save-search {
+  width: 100%;
+  height: 90vh;
+  background-image: url(/img/thefork/save-search.png);
+  background-size:cover;
+  background-position:left;
+
+  position: relative;
+}
+
+.save-search-info {
+  width: 30%;
+  
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.thefork-end {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/thefork/table-end.png);
+  background-size: cover;
+  background-position: top;
+}
+
+/* type styles */
+
+.intelligent-map p {
+  max-width: 40%;
+}
+.features p {
+  max-width: 40%;
+}
+
+.save-search-info p {
+  max-width: 100%;
+}
+
+
+
+
+/*---------------------------  tags */
+
+/* container */
+
+.tags-wrapper {
+  margin: 3em auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* type styles */
+
+.tags {
+  display: inline-block;
+  margin: .5em;
+  padding: 0 .3em;
+
+  font-weight: 400;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.tags:hover {
+  transform: scale(1.1);  
+  background-color: var(--grey);
+}
+
+
+
+
+/*---------------------------  div - next project */
+
+.next {
+  max-width: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+
+  line-height: 1em;
+}
+
+.socialicon {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.behance {
+ background-image: url(/img/icon-be.svg);
+ background-repeat: no-repeat;
+}
+
+.behance:hover {
+  background-image: url(/img/icon-be-hover.svg);
+}
+
+
+
+:root {
+  --primarytxt:#111111;
+  --light: #FAFAFA;
+  --grey: #dae1e7;
+  --white-dark: hsl(0, 0%, 95%);
+  --accent: #FEBB01;
+  --accent-opacity: rgba(254, 187, 1, 0);
+  --black: #1a1a1a;
+}
+
 * {
   /* border: 1px solid green; */
   padding: 0;
@@ -68,13 +384,13 @@ header {
 .logo {
   width: 45px;
   height: 40px;
-  background-image: url(img/logo.svg);
+  background-image: url(/img/logo.svg);
   background-position: left;
   background-size: cover;
 }
 
 .logo:hover {
-  background-image: url(img/logo-accent.svg);
+  background-image: url(/img/logo-accent.svg);
   background-position: left;
   background-size: cover;
   background-color:var(--accent-opacity);
@@ -405,12 +721,12 @@ section article {
 }
 
 .behance {
- background-image: url(img/icon-be.svg);
+ background-image: url(/img/icon-be.svg);
  background-repeat: no-repeat;
 }
 
 .behance:hover {
-  background-image: url(img/icon-be-hover.svg);
+  background-image: url(/img/icon-be-hover.svg);
 }
 
 

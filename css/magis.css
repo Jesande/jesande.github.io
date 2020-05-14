@@ -50,7 +50,7 @@ section article {
   background-image: url("/img/magis/cover-header-01.png");
   background-position: center;
   background-size: cover;
-  
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -160,8 +160,8 @@ section article {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  background-color:var(--grey)
-  ;
+  background-color:var(--grey);
+
 }
 
 .strategy-title {
@@ -186,8 +186,10 @@ section article {
 
   background-image: url("/img/magis/mockup-01.png");
   background-size: contain;
-  background-position: left;
+  background-position: top left;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+
 
   background-color: var(--grey);
 }
@@ -246,12 +248,6 @@ section article {
   width: 300px;
 }
 
-.landingpage {
-  height: 330px;
-  background-image: url(/img/magis/home01.png);
-  background-position: right;
-  background-repeat: no-repeat;
-}
 
 .flex-row-center {
   display: flex;
