@@ -208,6 +208,12 @@ nav#dot-nav a.active {
 
 /*-------------------------------------------- footer */
 
+footer {
+  padding: 1em;
+  font-size: small;
+  text-align: center;
+}
+
 .socialicon {
   width: 45px;
   height: 45px;
