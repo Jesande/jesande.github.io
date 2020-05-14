@@ -176,6 +176,22 @@ header {
 
 /*-------------------------------------------- footer */
 
+.socialicon {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+.behance {
+ background-image: url(/img/icon-be.svg);
+ background-repeat: no-repeat;
+}
+
+.behance:hover {
+  background-image: url(/img/icon-be-hover.svg);
+}
+
+
 footer {
   width: 100%;
   height: 50px;

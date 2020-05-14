@@ -176,12 +176,14 @@ section article {
 
   background-image: url("/img/mask/bg_skill.png");
   background-size: cover;
-  background-position: top;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-color: #CBD5F3;
 }
 
 .solutions-title{
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 4em;
   width: 35%;
 }
@@ -281,20 +283,6 @@ section article {
   line-height: 1em;
 }
 
-.socialicon {
-  width: 45px;
-  height: 45px;
-  display: inline-block;
-}
-
-.behance {
- background-image: url(img/icon-be.svg);
- background-repeat: no-repeat;
-}
-
-.behance:hover {
-  background-image: url(img/icon-be-hover.svg);
-}
 
 
 

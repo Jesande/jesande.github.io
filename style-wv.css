@@ -130,7 +130,8 @@ nav#dot-nav a {
   margin: 10px;
 }
 
-nav#dot-nav a.active, nav#dot-nav a:first-child {
+/* nav#dot-nav a.active, nav#dot-nav a:first-child { */
+nav#dot-nav a.active {
   background: var(--black);
 }
 

@@ -151,19 +151,7 @@ a:hover {
 
 /* type styles */
 
-.title {
-  max-width: 50%;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1.25em;
-}
 
-.intro {
-  font-size: 1.9rem;
-  font-weight: 300;
-  line-height: 1.25;
-  color: var(--primarytxt); 
-}
 
 
 
@@ -452,21 +440,6 @@ a:hover {
   align-content: flex-end;
 
   line-height: 1em;
-}
-
-.socialicon {
-  width: 45px;
-  height: 45px;
-  display: inline-block;
-}
-
-.behance {
- background-image: url(img/icon-be.svg);
- background-repeat: no-repeat;
-}
-
-.behance:hover {
-  background-image: url(img/icon-be-hover.svg);
 }
 
 .profile-bg {
