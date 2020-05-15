@@ -38,17 +38,17 @@ nav#dot-nav {
   position: fixed;
   right: 20px;
   top: 20px;
+  mix-blend-mode: multiply;
 }
 
 nav#dot-nav a {
   border: 1px solid var(--grey);
   background-color:  var(--grey);
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
+  border-radius: 8px;
+  width: 4px;
+  height: 12px;
   display: block;
   margin: 10px;
-  /* padding: 10px; */
 }
 
 nav#dot-nav a:hover {
@@ -344,6 +344,8 @@ body {
   font-weight: 300;
   line-height: 1.5em;
   color: var(--primarytxt);
+  scroll-behavior: smooth;
+
 }
 
 h1, h2, h3, h4 {

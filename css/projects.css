@@ -27,6 +27,8 @@ body {
   font-weight: 300;
   line-height: 1.5em;
   color: var(--primarytxt);
+  scroll-behavior: smooth;
+
 }
 
 /* type styles */
@@ -141,6 +143,7 @@ nav#dot-nav {
   position: fixed;
   right: 20px;
   top: 20px;
+  mix-blend-mode: multiply;
 }
 
 nav#dot-nav a {
@@ -151,7 +154,6 @@ nav#dot-nav a {
   height: 8px;
   display: block;
   margin: 10px;
-  /* padding: 10px; */
 }
 
 nav#dot-nav a:hover {

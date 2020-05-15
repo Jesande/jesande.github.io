@@ -25,6 +25,7 @@ body {
   font-weight: 300;
   line-height: 1.5em;
   color: var(--primarytxt);
+  scroll-behavior: smooth;
 }
 
 img {
@@ -129,7 +130,6 @@ nav#dot-nav a {
   height: 8px;
   display: block;
   margin: 10px;
-  /* padding: 10px; */
 }
 
 nav#dot-nav a:hover {
@@ -252,13 +252,11 @@ section, .about-content {
 }
 
 .magis-container {
-  background-image: url(img/magis/cover-01.png);
+  background-image: url(img/magis/cover-header-01.png);
   background-position: center;
   background-size: cover;
 }
-.magis-container *{
-  color: var(--grey);
-}
+
 
 .mask-container {
   background-image: url(img/mask/cover-01.png);
