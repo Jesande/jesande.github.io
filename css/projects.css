@@ -28,7 +28,10 @@ body {
   line-height: 1.5em;
   color: var(--primarytxt);
   scroll-behavior: smooth;
+}
 
+img {
+  display: block;
 }
 
 /* type styles */
@@ -60,26 +63,6 @@ li{
   margin: .5em 0;
 }
 
-.reset-list {
-  padding: 0;
-}
-  
-.reset-list  li{
-  list-style: none;
-}
-
-
-.list-with-title li:first-child{
-  margin-left: 0;
-  list-style: none;
-}
-
-.list-with-title li{
-  margin-left: 20px;
-  list-style: circle;
-}
-
-
 a {
   font-weight: 400;
   text-decoration: none;
@@ -91,6 +74,8 @@ a:hover {
   color:var(--accent);
 }
   
+/* list */
+
 .flex-list {
   display: flex;
   flex-flow: row ;
@@ -99,9 +84,54 @@ a:hover {
   align-content: center;
 }
 
-img {
-  display: block;
+.reset-list {
+  padding: 0;
 }
+  
+.reset-list  li{
+  list-style: none;
+}
+
+.list-with-title li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-with-title li{
+  margin-left: 20px;
+  list-style: circle;
+}
+
+/* cards  */
+
+.card-container {
+  margin:  0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.list-card {
+  margin:2%;
+  padding: 3%;
+
+  flex-basis: 40%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: white;
+
+  box-shadow: 0px 0px 30px -14px rgba(199,199,199,1);
+  border-radius: 10px;
+  transition: transform 300ms ease-out 200ms;
+}
+
+.list-card:hover {
+  transform: scale(1.1);
+  transition: transform 200ms ease-in 200ms;
+}
+
 
 
 /*----------------------- nav */
@@ -164,13 +194,13 @@ nav#dot-nav a:hover {
   margin: 10px;
 }
 
-/* nav#dot-nav a.active, nav#dot-nav a:first-child { */
 nav#dot-nav a.active {
   background: var(--black);  
   border: 1px solid var(--black);  
 }
 
 /*-------------------------------------------- brief */
+
 .project-team{
   width: 50%;
   display: flex;
@@ -178,25 +208,6 @@ nav#dot-nav a.active {
   align-items: center;
   justify-content: space-between;
 }
-/* 
-.users-list {
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-content: center;
-  justify-items: center;
-  
-}
-
-.users-list ul{
-  flex-basis: 100px;
-  flex-grow:1;
-  flex-shrink:1;
-}
-
-.users-list img{
-  width: 140px;
-} */
 
 /*-------------------------------------------- tags */
 
@@ -247,12 +258,4 @@ footer {
 
 .behance:hover {
   background-image: url(/img/icon-be-hover.svg);
-}
-
-
-footer {
-  width: 100%;
-  height: 50px;
-  padding: 5%;
-  text-align: right;
 }
