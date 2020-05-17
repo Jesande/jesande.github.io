@@ -93,47 +93,6 @@ section article {
   border-radius: 10px;
 }
 
-.card-container {
-  margin:  0;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-
-.list-card {
-  margin:2%;
-  padding: 3%;
-
-  flex-basis: 40%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  background-color: white;
-
-  box-shadow: 0px 0px 30px -14px rgba(199,199,199,1);
-  border-radius: 10px;
-  transition: transform 300ms ease-out 200ms;
-}
-
-.list-card:hover {
-  transform: scale(1.1);
-  transition: transform 200ms ease-in 200ms;
-}
-
-
-/* type styles */
-
-.list-card li:first-child{
-  margin-left: 0;
-  list-style: none;
-}
-
-.list-card li{
-  margin-left: 20px;
-  list-style: circle;
-}
-
 
 
 /*---------------------------  project solutions */
