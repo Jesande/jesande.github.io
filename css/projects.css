@@ -20,13 +20,24 @@ body {
   padding: 0;
   margin: 0;
   
-  background-color: var(--light);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5em;
+
+  background-color: var(--light);
   color: var(--primarytxt);
   scroll-behavior: smooth;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
 }
 
 img {
@@ -39,6 +50,7 @@ h1, h2, h3, h4 {
   margin: .5em 0;
   line-height: 1.5em;
 }
+
 h1 {
   max-width: 50%;
   font-size: 3rem;
@@ -47,6 +59,7 @@ h1 {
 }
 
 h2 {
+  max-width: 90%;
   font-size: 2em;
   font-weight: 300;
   line-height: 1.25;
@@ -208,7 +221,19 @@ nav#dot-nav a.active {
   justify-content: space-between;
 }
 
-/*-------------------------------------------- tags */
+
+/*---------------------------  tags */
+
+/* container */
+
+.tags-wrapper {
+  margin: 3em auto;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 120px;
+}
+
+/* type styles */
 
 .tags {
   display: inline-block;
@@ -221,7 +246,7 @@ nav#dot-nav a.active {
 }
 
 .tags:hover {
-  transform: scale(1.1);  
+  transform: scale(1.05);  
   background-color: var(--grey);
 }
 
@@ -237,6 +262,19 @@ nav#dot-nav a.active {
 }
 
 /*-------------------------------------------- footer */
+
+.next {
+  max-width: 100%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+
+  line-height: 1em;
+}
 
 footer {
   padding: 1em;
