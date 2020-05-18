@@ -72,7 +72,15 @@ a:hover {
 .reset-list  li{
   list-style: none;
 }
+.list-with-title li:first-child{
+  margin-left: 0;
+  list-style: none;
+}
 
+.list-with-title li{
+  margin-left: 20px;
+  list-style: circle;
+}
 header {
   width: 100%;
   padding: 0 3em;
@@ -205,7 +213,7 @@ section, .about-content {
 }
 
 .thefork-container {
-  background-image: url(img/thefork/cover-01.png);
+  background-image: url(img/thefork/cover-01.jpg);
   background-position: center;
   background-size: cover;
 }
