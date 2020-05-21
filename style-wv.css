@@ -72,6 +72,7 @@ a:hover {
 .reset-list  li{
   list-style: none;
 }
+
 .list-with-title li:first-child{
   margin-left: 0;
   list-style: none;
@@ -81,6 +82,7 @@ a:hover {
   margin-left: 20px;
   list-style: circle;
 }
+
 header {
   width: 100%;
   padding: 0 3em;
@@ -95,6 +97,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-image: linear-gradient(180deg, #fafafa 70%, #fafafa00);
 }
 
 nav ul{
@@ -192,14 +195,12 @@ section, .about-content {
   transition: transform 300ms ease-out 200ms;
 }
 
-.project-container:hover{
+.project-container:hover {
   transform: scale(1.05);
   transition: transform 300ms ease-in 250ms;
 }
-.project-container a:hover{
- color: var(--primarytxt);
 
-}
+
 
 .project-label {
   position: absolute;
