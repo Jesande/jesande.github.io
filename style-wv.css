@@ -221,20 +221,20 @@ section, .about-content {
 }
 
 .thefork-container {
-  background-image: url(img/thefork/cover-01.jpg);
+  background-image: url("img/thefork/jesande-theforkapp-cover.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .magis-container {
-  background-image: url(img/magis/cover-header-01.png);
+  background-image: url("img/magis/jesande-magis-cover.png");
   background-position: center;
   background-size: cover;
 }
 
 
 .mask-container {
-  background-image: url(img/mask/jesande-skill-cover-logo.png);
+  background-image: url("img/mask/jesande-skill-cover-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
