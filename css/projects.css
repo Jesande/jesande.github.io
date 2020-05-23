@@ -148,14 +148,15 @@ a:hover {
 
 /*----------------------- nav */
 
-header {
+
+.main-nav {
   width: 100%;
   padding: 0 3em;
 
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 60px;
   z-index: 1;
 
   display: flex;
@@ -228,9 +229,9 @@ nav#dot-nav a.active {
 
 .tags-wrapper {
   margin: 3em auto;
+  padding: 0 120px;
   max-width: 100%;
   text-align: center;
-  padding: 0 120px;
 }
 
 /* type styles */

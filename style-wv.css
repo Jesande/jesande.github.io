@@ -83,14 +83,16 @@ a:hover {
   list-style: circle;
 }
 
-header {
+/*-------------------------------------------- main nav*/
+
+.main-nav {
   width: 100%;
   padding: 0 3em;
 
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 60px;
   z-index: 1;
 
   display: flex;
@@ -98,19 +100,17 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--light);
-  /* box-shadow: 0px 0px 39px -14px rgba(199,199,199,1); */
-
-  /* background-image: linear-gradient(180deg, #fafafa 70%, #fafafa00); */
 }
 
-nav ul{
+#menu ul{
   display: flex;
   flex-direction: row;
   align-content: space-between;
 }
 
-nav ul li {
-  padding: 0 0 0 30px;
+#menu li {
+  padding: 0 0 0 35px;
+  /* border-bottom: 2px solid var(--black); */
 }
 
 .logo {
@@ -168,8 +168,12 @@ section, .about-content {
   justify-content: center;
 }
 
-#work, #about, #contact {
+#work, #contact {
   min-height: 80vh;
+}
+
+#about {
+  min-height: 60vh;
 }
 
 #work, #about .section-content{
@@ -230,7 +234,7 @@ section, .about-content {
 
 
 .mask-container {
-  background-image: url(img/mask/cover-01.png);
+  background-image: url(img/mask/jesande-skill-cover-logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -319,3 +323,6 @@ footer {
   font-size: small;
   text-align: center;
 }
+
+
+/* ---------------------- */
