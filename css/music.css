@@ -56,121 +56,53 @@ li{
   text-align: center;
 }
 
-.logo-mask {
-  width: 85px;
-  height: 85px;
-}
-
 
 /*---------------------------  project brief */
 
-/* containers  */
+.research-section {
+  padding: 3em 6em;
+  background-color: white;
+}
 
-.research-grid {
-  margin: 0 auto;
-  max-width: 100%;
-  min-height: 100vh;
-  padding: 0 120px;
 
+.two-col-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, auto);
-  grid-gap: 20px;
+  grid-template-rows:  auto;
+  grid-gap: 40px;
 }
 
-.research-title {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-}
-
-.research-img {
-  /* grid-row: 2/3; */
-  grid-column: 1/-1;
+.lyrics{
   align-self: center;
-  justify-self: center;
 }
 
-.quote {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  padding: .8em;
-  color: white;
-  font-weight: 400;
-  background-color: #D22F27;
-  border-radius: 10px;
-}
 
 /*---------------------------   solutions */
 
 /* containers  */
-section.solutions-grid {
+.solutions-container {
   margin: 3em auto;
-  padding: 0;
+  padding: 3em;
   max-width: 100%;
-  
-  display: grid;
-  grid-template-columns: 1fr 50%;
-  grid-template-rows: auto auto;
-  align-items: center;
 }
 
 .solutions-img{
   width: 100%;
   height: auto;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
 }
 
 .solutions-title {
-  max-width: 80%;
-  grid-row: 1/2;
-  grid-column: 2/3;
-  align-self: flex-end;
+
 }
 
 .solutions-title h2{
-  max-width: 100%;
-}
-
-@media (max-width:745px) {
-  .solutions-title h2{
-    font-size: 1.4rem;
-  }
+  /* max-width: 100%; */
 }
 
 
 .solutions-description {
-  align-self: flex-start;
+  /* align-self: flex-start;
   max-width: 80%;
   grid-row: 2/3;
-  grid-column: 2/3;
-}
-    
-@media (max-width:986px) {
-
-  .solutions-img{
-    grid-row: 1/2;
-    grid-column: 1/-1;
-  }
-  
-  .solutions-title {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    align-self: center;
-  }
-  
-  .solutions-description {
-    max-width: 100%;
-    margin: 0;
-    padding: 2em 4em;
-
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-
-    background-color: #cbd5f3;
-  }
-
-
+  grid-column: 2/3; */
 }
