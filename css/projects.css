@@ -251,17 +251,6 @@ nav#dot-nav a.active {
   background-color: var(--grey);
 }
 
-.quote {
-  display:block;
-  margin: .5em;
-  padding: .3em;
-
-  text-align: center;
-  color: var(--black);
-  background-color: var(--grey);
-  border: 1px solid var(--black);
-}
-
 /*-------------------------------------------- footer */
 
 .next {
