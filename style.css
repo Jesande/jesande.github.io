@@ -23,8 +23,8 @@ html {
 
 @media (max-width:745px) {
   html {
-    font-size: 14px;
-    line-height: 1.2em;
+    font-size: 16px;
+    line-height: 1.3em;
   }
 }
 
@@ -58,6 +58,22 @@ h2, .h2 {
   font-weight: 300;
   line-height: 1.25;
   color: var(--primarytxt); 
+}
+
+@media (max-width:745px) {
+  h1, .h1 {
+    max-width: 70%;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.15em;
+  }
+  
+  h2, .h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: var(--primarytxt); 
+  }
 }
 
 p, li{
@@ -311,8 +327,104 @@ section, .about-content {
   margin:0 0 1.5rem;
 }
 
-@media (max-width:745px) {
+@media (max-width:1065px) {
+
+  .about-abstrat {
+    max-width: 60%;
+    min-width: 50%;
+  } 
   
+  .about-aside {
+    max-width: 30%;
+    min-width: 25%;
+  }
+
+}
+
+
+@media (max-width:945px) {
+
+  .about-content {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .about-abstrat {
+    max-width: 100%;
+    max-width: 70%;
+  } 
+  
+  .cv-btn {
+    margin: 20px 0;
+    padding: 5px 15px;
+    display: inline-block;
+    justify-self: flex-start;
+    border: solid 1px var(--black);
+  }
+  
+  .about-aside {
+    max-width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px 40px;
+  }
+
+  .software {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: flex-end;
+  }
+
+  .languages {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .core {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .software-list {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .languages-list {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .core-list {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+
+  p.bold {
+    margin: .5em 0 0;
+  }
+
+}
+
+@media (max-width:564px) {
+
+
+  .about-aside {
+    max-width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .software {
+    align-self: flex-start;
+  }
+
 }
 
 
