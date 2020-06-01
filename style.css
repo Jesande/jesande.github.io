@@ -310,6 +310,7 @@ section, .about-content {
     background: linear-gradient(180deg, var(--light) 0%, hsl(208, 21%, 97%) 100%);
   }
   #about {
+    padding-top: 100px;
     background: linear-gradient(0deg, var(--light) 0%, hsl(208, 21%, 97%) 100%);
   }
   #work, #about, #contact .section-content {

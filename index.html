@@ -35,10 +35,10 @@
       <img src="img/icon-menu.svg" alt="">
     </button>
     <ul id="menu-list" class="menu-mobile-list-off">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#work">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a> </li>
+      <li><a href="#home" id="home-link">Home</a></li>
+      <li><a href="#work" id="projects-link">Projects</a></li>
+      <li><a href="#about" id="about-link">About</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a> </li>
     </ul>
   </nav>
 </header>
@@ -147,6 +147,27 @@
 
   menuBtn.addEventListener("click", openMenu);
   function openMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+
+  var homeLink = document.getElementById("home-link");
+  homeLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var projectsLink = document.getElementById("projects-link");
+  projectsLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var aboutLink = document.getElementById("about-link");
+  aboutLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var contactLink = document.getElementById("contact-link");
+  contactLink.addEventListener("click", closeMenu);
+  function closeMenu() {
     menuList.classList.toggle("menu-mobile-list-on")
   }
 
