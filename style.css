@@ -64,15 +64,16 @@ h2, .h2 {
   h1, .h1 {
     max-width: 70%;
     font-size: 2.7rem;
-    font-weight: 600;
-    line-height: 1.15em;
   }
   
   h2, .h2 {
     font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.25;
-    color: var(--primarytxt); 
+  }
+}
+
+@media (max-width:525px) {
+  h1, .h1 {
+    max-width: 90%;
   }
 }
 
@@ -136,7 +137,6 @@ a:hover {
 
 #menu li {
   padding: 0 0 0 35px;
-  /* border-bottom: 2px solid var(--black); */
 }
 
 .logo {
@@ -202,8 +202,27 @@ section, .about-content {
   min-height: 60vh;
 }
 
-#work, #about .section-content{
+@media (max-width:745px) {
+  #about {
+    min-height: 45vh;
+  }
+}
+
+#work, #about, #contact .section-content {
   max-width: 70%;
+}
+
+@media (max-width:945px) {
+  #work, #about, #contact .section-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width:570px) {
+  #work, #about, #contact .section-content {
+    max-width: 90%;
+  }
+  
 }
 
 /*-------------------------------------------- projects */
@@ -232,6 +251,7 @@ section, .about-content {
   top: 35%;
   left: 5%;
   width: 400px;
+  transition: all 200ms ease-out 200ms;
 }
 
 .project-label h2{
@@ -253,7 +273,6 @@ section, .about-content {
   background-position: center;
   background-size: cover;
 }
-
 
 .mask-container {
   max-width: 80%;
@@ -280,28 +299,36 @@ section, .about-content {
     top: 103%;
     left: 0%;
     width: 100%;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-
+  
   .thefork-container {
     height: 350px;
     background-position: right;
   }
-
+  
   .magis-container {
     height: 350px;
     background-position: right;
   }
-
+  
   .mask-container {
     height: 350px;
     background-position: right;
   }
-
+  
 }
+
+@media (max-width:600px) {
+  .project-container {
+    margin:4em  auto 11em;
+  }
+  .project-label {
+    flex-direction: column;
+  }
 
 /*-------------------------------------------- about */
 
@@ -355,6 +382,10 @@ section, .about-content {
   .about-abstrat {
     max-width: 100%;
     max-width: 70%;
+  } 
+  
+  .about-abstrat p{
+    margin-bottom: 30px;
   } 
   
   .cv-btn {
@@ -412,7 +443,6 @@ section, .about-content {
 }
 
 @media (max-width:564px) {
-
 
   .about-aside {
     max-width: 100%;
