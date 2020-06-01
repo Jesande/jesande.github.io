@@ -29,6 +29,18 @@
       <li><a href="#contact">Contact</a> </li>
     </ul>
   </nav>
+
+  <nav class="menu-mobile">
+    <button id="menu-mobile-btn" class="menu-mobile-btn">  
+      <img src="img/icon-menu.svg" alt="">
+    </button>
+    <ul id="menu-list" class="menu-mobile-list-off">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a> </li>
+    </ul>
+  </nav>
 </header>
 <nav id="dot-nav"></nav>
 
@@ -129,6 +141,14 @@
   ScrollReveal().reveal('h2')
   ScrollReveal().reveal('h3')
   ScrollReveal().reveal('p')
+
+  var menuBtn = document.getElementById("menu-mobile-btn");
+  var menuList = document.getElementById("menu-list");
+
+  menuBtn.addEventListener("click", openMenu);
+  function openMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
 
 </script>
 <script src="/js/dot-nav-min.js">

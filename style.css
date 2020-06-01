@@ -2,6 +2,7 @@
   --primarytxt:#111111;
   --light: #FAFAFA;
   --grey: #dae1e7;
+  --grey-light: hsl(208, 21%, 92%);
   --accent: #5834B3;
   --accent: #d29b03;
   --accent: #FEBB01;
@@ -139,6 +140,72 @@ a:hover {
   padding: 0 0 0 35px;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width:465px) {
+  #menu {
+    display: none;
+  }
+  
+  .menu-mobile {
+    display: block;
+  }
+  
+  /* hamburger menu */
+  #menu-mobile-btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--light);
+  }
+
+  .menu-mobile-list-off {
+    width: 60%;
+    height: 100vh;
+
+    position: absolute;
+    top: 60px;
+    right: -100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    background-color: var(--grey);
+    transition: all 200ms ease-out;
+  }
+  
+  .menu-mobile-list-on {
+    width: 70%;
+    height: 100vh;
+    
+    position: absolute;
+    top: 60px;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+    background-color: var(--grey);
+    transition: all 200ms ease-out;
+  }
+
+  .menu-mobile-list-on li {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    width: 120px;
+    margin-bottom: 30px;
+    border-bottom: #000000 solid 2px;
+  }
+  
+}
+
 .logo {
   width: 45px;
   height: 40px;
@@ -184,6 +251,12 @@ nav#dot-nav a.active {
   border: 1px solid var(--black);  
 }
 
+@media (max-width:465px) {
+  nav#dot-nav {
+    display: none;
+  }
+}
+
 /*-------------------------------------------- sections general*/
 
 section, .about-content {
@@ -207,6 +280,11 @@ section, .about-content {
     min-height: 45vh;
   }
 }
+@media (max-width:445px) {
+  #about {
+    min-height: 65vh;
+  }
+}
 
 #work, #about, #contact .section-content {
   max-width: 70%;
@@ -222,7 +300,21 @@ section, .about-content {
   #work, #about, #contact .section-content {
     max-width: 90%;
   }
-  
+}
+
+@media (max-width:445px) {
+  #work, #about, #contact .section-content {
+    max-width: 100%;
+  }
+  #home {
+    background: linear-gradient(180deg, var(--light) 0%, hsl(208, 21%, 97%) 100%);
+  }
+  #about {
+    background: linear-gradient(0deg, var(--light) 0%, hsl(208, 21%, 97%) 100%);
+  }
+  #work, #about, #contact .section-content {
+    max-width: 100%;
+  }
 }
 
 /*-------------------------------------------- projects */
@@ -329,7 +421,30 @@ section, .about-content {
   .project-label {
     flex-direction: column;
   }
+}
 
+@media (max-width:465px) {
+  .project-container {
+    margin: 4em  auto 12em;
+  }
+  
+  
+  .thefork-container {
+    height: 400px;
+    background-position: center;
+  }
+  
+  .magis-container {
+    height: 400px;
+    background-position: -500px;
+  }
+  
+  .mask-container {
+    height: 400px;
+    background-position: center;
+  }
+  
+}
 /*-------------------------------------------- about */
 
 .about-content {
@@ -457,6 +572,11 @@ section, .about-content {
 
 }
 
+@media (max-width:445px) {
+  .about-abstrat {
+    max-width: 100%;
+  } 
+}
 
 /*-------------------------------------------- contact */
 .socialcontainer {
