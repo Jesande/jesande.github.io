@@ -17,13 +17,25 @@
   width: 100%;
   height: 100vh;
   background-image: url("/img/thefork/jesande-theforkapp-cover.jpg");
-  background-position: right;
+  background-position: center;
   background-size: cover;
   
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@media (max-width:945px) {
+
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:465px) {
+
 }
 
 
@@ -37,39 +49,29 @@ section article {
   margin: 1em 0;
 }
 
-
-/* type styles */
-.flex-row {
+.users-grid {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+}
+
+.users-grid ul {
+  margin: 10px 20px;
   text-align: center;
 }
 
-.users-list {
-  display:flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-}
-
-.users-list ul{
-  flex-basis: 150px;
-  flex-grow:2;
-  flex-shrink:1;
-  text-align: center;
-}
-
-.users-list img{
+.users-grid img {
   width: 100px;
 }
 
-
-@media (max-width:768px) {
-
-}
+/* @media (max-width:768px) {
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+  }
+} */
 
 @media (max-width:465px) {
 
@@ -103,13 +105,6 @@ section article {
 }
 
 
-@media (max-width:768px) {
-
-}
-
-@media (max-width:465px) {
-
-}
 /*---------------------------   project solutions */
 
 /* containers  */
@@ -142,6 +137,30 @@ section article {
   text-align: left;
 }
 
+@media (max-width:768px) {
+  .flex-row {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .flex-row img {
+    width: 100%;
+    align-self: center;
+  }
+  #features p {
+    width: 70%;
+  }
+  .save-img {
+    order: 2;
+  }
+}
+
+@media (max-width:465px) {
+  #features p {
+    width: 100%;
+  }
+}
 .flex-col {
   display: flex;
   flex-flow:column;
@@ -193,6 +212,6 @@ section article {
   height: 100vh;
   background-image: url("/img/thefork/jesande-theforkapp-userexperience.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
