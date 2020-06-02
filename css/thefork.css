@@ -17,7 +17,7 @@
   width: 100%;
   height: 100vh;
   background-image: url("/img/thefork/jesande-theforkapp-cover.jpg");
-  background-position: center;
+  background-position: right;
   background-size: cover;
   
   position: absolute;
@@ -66,6 +66,14 @@ section article {
   width: 100px;
 }
 
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:465px) {
+
+}
 /* containers  */
 
 .card-container {
@@ -95,6 +103,13 @@ section article {
 }
 
 
+@media (max-width:768px) {
+
+}
+
+@media (max-width:465px) {
+
+}
 /*---------------------------   project solutions */
 
 /* containers  */
@@ -108,7 +123,7 @@ section article {
   background-image: url("/img/thefork/jesande-theforkapp-solutions-mockup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-color: var(--grey);
 }
 
@@ -145,6 +160,13 @@ section article {
   flex-shrink: 1;
 }
 
+@media (max-width:768px) {
+
+}
+
+@media (max-width:465px) {
+
+}
 /* type styles */
 
 #new-features p {
@@ -158,7 +180,13 @@ section article {
 }
 
 
+@media (max-width:768px) {
 
+}
+
+@media (max-width:465px) {
+
+}
 
 .thefork-end {
   width: 100%;
