@@ -207,7 +207,6 @@ a:hover {
     
     list-style: none;
     background-color:  var(--grey);
-    /* background: linear-gradient(-90deg, var(--grey) 80%, #dae1e795 80%, #dae1e785 100%); */
     transition: all 200ms ease-out;
   }
 
@@ -360,6 +359,10 @@ section, .about-content {
   left: 5%;
   width: 400px;
   transition: all 200ms ease-out 200ms;
+}
+
+.project-label p {
+  color: var(--primarytxt);
 }
 
 .project-label h2{
@@ -650,4 +653,3 @@ footer {
 }
 
 
-/* ---------------------- */
