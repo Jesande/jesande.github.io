@@ -63,10 +63,6 @@ section {
   }
 }
 
-@media (max-width:465px) {
-
-}
-
 img {
   display: block;
 }
@@ -215,8 +211,6 @@ a:hover {
   justify-content: space-between;
 }
 
-
-
 .logo {
   width: 45px;
   height: 40px;
@@ -281,20 +275,12 @@ nav#dot-nav a.active {
   justify-content: space-between;
 }
 
-
 @media (max-width:945px) {
   .project-team{
     width: 80%;
   }
 }
 
-@media (max-width:768px) {
-
-}
-
-@media (max-width:465px) {
-
-}
 /*---------------------------  tags */
 
 /* container */
@@ -306,7 +292,6 @@ nav#dot-nav a.active {
   text-align: center;
 }
 
-
 @media (max-width:768px) {
   .tags-wrapper {
     padding: 5%;
@@ -315,9 +300,6 @@ nav#dot-nav a.active {
   }
 }
 
-@media (max-width:465px) {
-
-}
 /* type styles */
 
 .tags {

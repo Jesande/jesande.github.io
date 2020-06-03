@@ -26,20 +26,6 @@
   z-index: -1;
 }
 
-@media (max-width:945px) {
-
-}
-
-@media (max-width:768px) {
-
-}
-
-@media (max-width:465px) {
-
-}
-
-
-
 
 /*--------------------------- project brief */
 
@@ -133,16 +119,20 @@ section article {
     align-content: flex-start;
     align-items: flex-start;
   }
+
   .flex-row img {
     width: 100%;
     align-self: center;
   }
+
   #features p {
     width: 70%;
   }
+
   .save-img {
     order: 2;
   }
+
   .img-100 {
     width: 100%;
   }
@@ -160,7 +150,6 @@ section article {
     width: 100%;
   }
 }
-
 
 .img-100 {
   width: 100%;
@@ -193,15 +182,10 @@ section article {
   background-repeat: no-repeat;
 }
 
-
 @media (max-width:768px) {
   .thefork-end {
     height: 50vh;
     background-size: cover;
   }
-
-}
-
-@media (max-width:465px) {
 
 }
