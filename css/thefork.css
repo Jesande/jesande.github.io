@@ -27,8 +27,6 @@
 }
 
 
-
-
 /*--------------------------- project brief */
 
 /* containers  */
@@ -37,32 +35,19 @@ section article {
   margin: 1em 0;
 }
 
-
-/* type styles */
-.flex-row {
+.users-grid {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+}
+
+.users-grid ul {
+  margin: 10px 20px;
   text-align: center;
 }
 
-.users-list {
-  display:flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-}
-
-.users-list ul{
-  flex-basis: 150px;
-  flex-grow:2;
-  flex-shrink:1;
-  text-align: center;
-}
-
-.users-list img{
+.users-grid img {
   width: 100px;
 }
 
@@ -108,7 +93,7 @@ section article {
   background-image: url("/img/thefork/jesande-theforkapp-solutions-mockup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
   background-color: var(--grey);
 }
 
@@ -127,11 +112,43 @@ section article {
   text-align: left;
 }
 
-.flex-col {
-  display: flex;
-  flex-flow:column;
-  justify-content: space-around;
-  align-items: center;
+@media (max-width:768px) {
+  .flex-row {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .flex-row img {
+    width: 100%;
+    align-self: center;
+  }
+
+  #features p {
+    width: 70%;
+  }
+
+  .save-img {
+    order: 2;
+  }
+
+  .img-100 {
+    width: 100%;
+  }
+  
+  .img-70 {
+    max-width: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width:465px) {
+  #features p {
+    width: 100%;
+  }
 }
 
 .img-100 {
@@ -140,7 +157,6 @@ section article {
 
 .img-70 {
   max-width: 70%;
-  flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -157,14 +173,19 @@ section article {
   max-width: 70%;
 }
 
-
-
-
 .thefork-end {
   width: 100%;
   height: 100vh;
   background-image: url("/img/thefork/jesande-theforkapp-userexperience.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+@media (max-width:768px) {
+  .thefork-end {
+    height: 50vh;
+    background-size: cover;
+  }
+
+}

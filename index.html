@@ -29,6 +29,18 @@
       <li><a href="#contact">Contact</a> </li>
     </ul>
   </nav>
+
+  <nav class="menu-mobile">
+    <button id="menu-mobile-btn" class="menu-mobile-btn">  
+      <img src="img/icon-menu.svg" alt="">
+    </button>
+    <ul id="menu-list" class="menu-mobile-list-off">
+      <li><a href="#home" id="home-link">Home</a></li>
+      <li><a href="#work" id="projects-link">Projects</a></li>
+      <li><a href="#about" id="about-link">About</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a> </li>
+    </ul>
+  </nav>
 </header>
 <nav id="dot-nav"></nav>
 
@@ -51,7 +63,7 @@
   <a href="projects/thefork.html" class="project-link">
     <article class="project-container thefork-container">
       <div class="project-label">
-        <h2>UX improvement <br> and UI redesign</h2>
+        <h2>UX improvement and UI redesign</h2>
         <p>[UX/UI]</p>
       </div>
     </article>
@@ -89,16 +101,16 @@
     <article class="about-abstrat">
       <p> With more than 10 years of experience both as a <span class="bold">graphic designer </span> and a former <span class="bold">business owner</span>, I have learned the importance of team-work, commitment, and communication. I have also cultivated skills to plan, develop, and deliver design/visual solutions. </p>
       <p> In order to keep learning and expand my knowledge as a designer, I decided to leave Colombia and move to Italy in order to pursue a masters degree in a field that I’ve always been curious about; <span class="bold">Web and Digital Design.</span> </p> 
-      <a href="pdf/JesDelgado-CV-2020.pdf" alt="Jessica Delgado, graphic designer CV"download> Download CV ↓ </a>
+      <a href="pdf/JesDelgado-CV-2020.pdf" alt="Jessica Delgado, graphic designer CV" download class="cv-btn"> Download CV ↓ </a>
     </article>
 
     <article class="about-aside">
-      <p class="bold"> Software Skills</p>
-      <p>Illustrator, InDesign, Photoshop, After Effects, HTML, CSS, Sketch, Adobe XD.  </p>
-      <p class="bold"> Languages</p>
-      <p>Spanish (native), <br> English (intermediate-high), Italian (beginner).</p>
-      <p class="bold"> Core Skills</p>
-      <p>Teamwork, Commitment,<br> 
+      <p class="bold software"> Software Skills</p>
+      <p class="software-list">Illustrator, InDesign, <br>Photoshop,  After Effects,<br>  HTML, CSS, <br> Sketch, Adobe XD. </p>
+      <p class="bold languages"> Languages</p>
+      <p class="languages-list">Spanish (native), <br> English (intermediate-high), <br> Italian (beginner).</p>
+      <p class="bold core"> Core Skills</p>
+      <p class="core-list">Teamwork, Commitment,<br> 
          Project Management,<br>
          Communication, Fast learning,<br>
          Resourceful, Detail-oriented,<br>
@@ -129,6 +141,35 @@
   ScrollReveal().reveal('h2')
   ScrollReveal().reveal('h3')
   ScrollReveal().reveal('p')
+
+  var menuBtn = document.getElementById("menu-mobile-btn");
+  var menuList = document.getElementById("menu-list");
+
+  menuBtn.addEventListener("click", openMenu);
+  function openMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+
+  var homeLink = document.getElementById("home-link");
+  homeLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var projectsLink = document.getElementById("projects-link");
+  projectsLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var aboutLink = document.getElementById("about-link");
+  aboutLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
+  var contactLink = document.getElementById("contact-link");
+  contactLink.addEventListener("click", closeMenu);
+  function closeMenu() {
+    menuList.classList.toggle("menu-mobile-list-on")
+  }
 
 </script>
 <script src="/js/dot-nav-min.js">
