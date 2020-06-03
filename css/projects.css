@@ -102,7 +102,7 @@ h2 {
   
   h2 {
     max-width: 100%;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 }
 
@@ -306,6 +306,18 @@ nav#dot-nav a.active {
   text-align: center;
 }
 
+
+@media (max-width:768px) {
+  .tags-wrapper {
+    padding: 5%;
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width:465px) {
+
+}
 /* type styles */
 
 .tags {
