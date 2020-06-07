@@ -4,7 +4,7 @@
   --grey: #dae1e7;
   --grey-light: hsl(208, 21%, 92%);
   --accent: #5834B3;
-  --accent: #d29b03;
+  --accent: #a9a9a9;
   --accent: #FEBB01;
   --black: #1a1a1a;
 }
@@ -92,8 +92,15 @@ h2, .h2 {
   }
 }
 
-p, li{
+p, li {
   margin: .5em 0;
+}
+
+@media (max-width:445px) {
+  p, li {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
 }
 
 a, .bold {
@@ -269,6 +276,66 @@ nav#dot-nav a.active {
   nav#dot-nav {
     display: none;
   }
+} 
+
+/*-------------------------------------------- scroll down */
+
+.scroll-down {
+  display: none;
+}
+
+@media (max-width:465px) {
+
+  .scroll-down {
+    margin-bottom: 0;
+
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--black);
+    border-radius: 50%;
+
+    font-family: monospace;
+    font-size: 4em;
+    text-decoration: none;
+  }
+}
+
+.arrow {
+  display: block;
+  color: var(--black);
+  font-size: 26px;
+
+  animation-name: goDown;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear; 
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(-100%);
+    opacity:0%;
+  }
+  70% {
+    transform: translateY(-40%);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(10%);
+    opacity: 0%;
+  }
 }
 
 /*-------------------------------------------- sections general*/
@@ -397,7 +464,7 @@ section, .about-content {
 @media (max-width:745px) {
   .project-container {
     margin:4em  auto 9em;
-    box-shadow: 0px -15px 20px -10px #a7a7a7, 0px 15px 20px -10px #ffffff;
+    box-shadow: 0px -15px 20px -10px #a7a7a7d0,;
   }
   
   .project-container:hover {
@@ -434,6 +501,7 @@ section, .about-content {
 }
 
 @media (max-width:600px) {
+
   .project-container {
     margin:4em  auto 11em;
   }
@@ -443,10 +511,10 @@ section, .about-content {
 }
 
 @media (max-width:465px) {
+
   .project-container {
     margin: 4em  auto 12em;
   }
-  
   
   .thefork-container {
     height: 400px;
@@ -488,6 +556,14 @@ section, .about-content {
   margin:0 0 1.5rem;
 }
 
+.cv-btn {
+  margin: 20px 0;
+  padding: 5px 15px;
+  display: inline-block;
+  justify-self: flex-start;
+  border: solid 1px var(--black);
+}
+
 @media (max-width:1065px) {
 
   .about-abstrat {
@@ -521,15 +597,7 @@ section, .about-content {
   .about-abstrat p{
     margin-bottom: 30px;
   } 
-  
-  .cv-btn {
-    margin: 20px 0;
-    padding: 5px 15px;
-    display: inline-block;
-    justify-self: flex-start;
-    border: solid 1px var(--black);
-  }
-  
+    
   .about-aside {
     max-width: 100%;
     margin: 20px 0;
