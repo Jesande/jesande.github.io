@@ -258,12 +258,12 @@ nav#dot-nav a.active {
   background: var(--black);  
   border: 1px solid var(--black);  
 }
-/* 
+
 @media (max-width:465px) {
   nav#dot-nav {
     display: none;
   }
-} */
+} 
 /*-------------------------------------------- brief */
 
 .project-team {
