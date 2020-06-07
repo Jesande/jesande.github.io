@@ -112,7 +112,6 @@ h2 {
   }
 }
 
-
 p{
   margin: .5em 0;
 }
@@ -259,15 +258,15 @@ nav#dot-nav a.active {
   background: var(--black);  
   border: 1px solid var(--black);  
 }
-
+/* 
 @media (max-width:465px) {
   nav#dot-nav {
     display: none;
   }
-}
+} */
 /*-------------------------------------------- brief */
 
-.project-team{
+.project-team {
   width: 50%;
   display: flex;
   flex-direction: row;
