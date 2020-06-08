@@ -3,7 +3,6 @@
   --light: #FAFAFA;
   --grey: #dae1e7;
   --grey-light: hsl(208, 21%, 92%);
-  --accent: #5834B3;
   --accent: #a9a9a9;
   --accent: #FEBB01;
   --black: #1a1a1a;
@@ -300,7 +299,7 @@ nav#dot-nav a.active {
     justify-content: center;
     align-items: center;
 
-    border: 2px solid var(--black);
+    border: 3px solid var(--grey);
     border-radius: 50%;
 
     font-family: monospace;
@@ -309,10 +308,11 @@ nav#dot-nav a.active {
   }
 }
 
-.arrow {
+.dot {
   display: block;
-  color: var(--black);
-  font-size: 26px;
+  color: var(--grey);
+  font-size: 30px;
+  font-weight: bolder;
 
   animation-name: goDown;
   animation-duration: 1.2s;
@@ -326,15 +326,19 @@ nav#dot-nav a.active {
 @keyframes goDown {
   0% {
     transform: translateY(-100%);
-    opacity:0%;
+    color: white;
+  }
+  40% {
+    transform: translateY(-20%);
+    color: var(--grey);
   }
   70% {
-    transform: translateY(-40%);
-    opacity: 100%;
+    transform: translateY(-20%);
+    color: hsl(208, 21%, 78%);
   }
   100% {
     transform: translateY(10%);
-    opacity: 0%;
+    color: white;
   }
 }
 
