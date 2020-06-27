@@ -92,7 +92,7 @@ h2 {
 
 @media (max-width:768px) {
   h1 {
-    max-width: 100%;
+    max-width:80%;
     font-size: 2.8rem;
   }
   
@@ -107,8 +107,8 @@ h2 {
     font-size: 2.5rem;
   }
   
-  h2 {
-    font-size: 1.5em;
+  h2, .h2 {
+    font-size: 1.25em;
   }
 }
 

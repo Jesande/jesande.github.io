@@ -19,6 +19,7 @@
   background-image: url("/img/thefork/jesande-theforkapp-cover.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   
   position: absolute;
   top: 0;
@@ -51,6 +52,12 @@ section article {
   width: 100px;
 }
 
+@media (max-width:530px){
+  .users-grid img {
+    width: 70px;
+  }
+}
+
 /* containers  */
 
 .card-container {
@@ -62,8 +69,8 @@ section article {
 }
 
 .list-card {
-  margin:2%;
-  padding: 3%;
+  margin: 15px;
+  padding: 30px;
 
   flex-basis: 250px;
   flex-shrink: 100px;
@@ -79,16 +86,19 @@ section article {
   transition: transform 200ms ease-in 200ms;
 }
 
-
 /*---------------------------   project solutions */
 
 /* containers  */
+
 .solutions-bg {
   width: 100%;
   height: 60vh;
   
-  position: relative;
-  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 1fr;
+  align-items: center;
+
 
   background-image: url("/img/thefork/jesande-theforkapp-solutions-mockup.jpg");
   background-size: cover;
@@ -98,10 +108,26 @@ section article {
 }
 
 .solutions-bg ul{
-  position: absolute;
-  top: 30%;
-  right: 6em;
-  width: 30%;
+  grid-column: 2/3;
+}
+
+@media (max-width:768px) {
+  .solutions-bg {
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px auto;
+    align-items: center;
+  
+    background-image: url("/img/thefork/jesande-theforkapp-solutions-mockup-small.png");
+    background-size: 650px;
+    background-position: top;
+  }
+
+  .solutions-bg ul{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
 }
 
 .flex-row {
@@ -126,7 +152,7 @@ section article {
   }
 
   #features p {
-    width: 70%;
+    width: 100%;
   }
 
   .save-img {
@@ -138,7 +164,7 @@ section article {
   }
   
   .img-70 {
-    max-width: 100%;
+    max-width: 70%;
     flex-basis: 100%;
     flex-grow: 1;
     flex-shrink: 1;
@@ -160,7 +186,11 @@ section article {
   flex-grow: 1;
   flex-shrink: 1;
 }
-
+@media (max-width:465px) {
+  .img-70 {
+    max-width: 100%;
+  }
+}
 /* type styles */
 
 #new-features p {
@@ -172,21 +202,8 @@ section article {
 .p-70 {
   max-width: 70%;
 }
-
-.thefork-end {
-  width: 100%;
-  height: 100vh;
-  background-image: url("/img/thefork/jesande-theforkapp-userexperience.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width:768px) {
-  .thefork-end {
-    width: 100%;
-    height: auto;
-    background-size: cover;
+@media (max-width:465px) {
+  .p-70 {
+    max-width: 100%;
   }
-
 }
