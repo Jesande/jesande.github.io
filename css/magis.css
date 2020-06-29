@@ -9,39 +9,36 @@
 }
 
 * {
-  /* border: 1px solid green; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* global */
-
-
-/*---------------------------   project header */
-
 
 /* div as image background */
 
 .header-bg {
   width: 100%;
   height: 100vh;
+
   background-image: url("/img/magis/jesande-magis-cover.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+
+  transition: all 1s ease-in-out;
 }
 
-.logo-magis {
-  width:179px;
-  height: 42px ;
-  margin: .7em 0;
-}
 
+@media (max-width:760px) {
+  .header-bg {
+    background-position: -700px;
+  }
+}
 
 /*---------------------------  first section - project brief */
 
@@ -52,14 +49,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  transition: all 1s ease-in-out;
+
 }
 
 .users-list {
   display:flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
-  justify-items: center;
+  transition: all 1s ease-in-out;
+
 }
 
 .users-list ul{
@@ -70,21 +70,31 @@
 
 .users-list img{
   width: 140px;
+  margin: 5px;
 }
 
 .card-container {
   margin: 4em auto;
-
+  
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+@media (max-width:383px) {
+  .users-list {
+    display:grid;
+  }
+  .users-list ul{
+    margin: 10px auto;
+  }
+}
+
 .list-card {
   margin:2%;
-  padding: 3%;
+  padding: 20px;
 
-  flex-basis: 400px;
+  flex-basis: 350px;
   flex-shrink: 200px;
   background-color: white;
 
@@ -112,56 +122,95 @@
 }
 
 
-
-/*----------------------------  strategy */
+/*----------------------------  strategy & solutions */
 
 .strategy-bg{
-  width: 100%;
-  height: 80vh;
-  z-index: -1;
- 
-  position: relative;
+  max-width: 100%;
+  min-height: auto;
+  margin: 0;
+  padding: 40px 120px;
 
-  background-image: url("/img/magis/jesande-magis-mobile-strategy.png");
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   background-color:var(--grey);
+  transition: all 1s ease-in-out;
 }
 
 .strategy-title {
-  position: absolute;
-  top: 15%;
-  left: 9em;
-  width: 35%;
+  max-width: 50%;
+  margin-right: 3em;
 }
 
-
-/*---------------------------- solutions */
-
-/* containers  */
+.strategy-img {
+  width: 317px;
+  height: auto;
+}
 
 .solutions-bg {
-  width: 100%;
-  height: 80vh;
+  margin: 0;
+  padding: 40px 0;
+  padding-right: 120px;
+  max-width: 100%;
+  min-height: auto;
   
-  position: relative;
-  z-index: -1;
-
-  background-image: url("/img/magis/jesande-magis-desktop-strategy.png");
-  background-size: contain;
-  background-position: top left;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease-in-out;
 
   background-color: var(--grey);
 }
 
-.solutions-bg .solutions-title{
-  position: absolute;
-  top: 30%;
-  right: 0;
-  width: 44%; 
+.solutions-title {
+  max-width: 40%;
 }
+
+.solutions-img {
+  max-width: 50%;
+  flex-shrink: 0;
+  height: auto;
+}
+
+@media (max-width:850px) {
+  .strategy-bg{
+    margin: 0;
+    padding: 40px 3em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .strategy-title {
+    max-width: 100%;
+  }
+  
+  .strategy-img {
+    width: 317px;
+    height: auto;
+  }
+  
+  .solutions-bg {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+
+  }
+  
+  .solutions-title {
+    padding: 40px 3em;
+    max-width: 100%;
+    order:1;
+  }
+  
+  .solutions-img {
+    max-width: 100%;
+    order:2;
+  }
+}
+
 
 /* type styles */
 
@@ -183,25 +232,13 @@
 
 /* containers  */
 
-.flex-row-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-col-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .flex-row-space {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  
+  transition: all 1s ease-in-out;
 }
 
 .features-wrapper article {
@@ -217,15 +254,58 @@
 }
 
 .features-wrapper ul {
-  padding: 0 3em;
+  padding: 0 2em;
   flex-basis: 40%;
   flex-grow: 1;
   flex-shrink: 1;
 }
 
+@media (max-width:583px) {
+    
+  .flex-row-space {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .features-wrapper img {
+    width: 100%;
+  }
+
+  .features-wrapper ul {
+    padding: 0;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .home-img {
+    order:2;
+  }
+
+  .home-txt {
+    order:1;
+  }
+
+  .tool-img {
+    order:2;
+  }
+
+  .tool-txt {
+    order:1;
+  }
+
+  .profile-img {
+    order:2;
+  }
+
+  .profile-txt {
+    order:1;
+  }
+
+}
 
 .end-img{
   width: 100%;
 }
-
-
