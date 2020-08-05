@@ -65,26 +65,26 @@
 <div id="project-list">
 
   <a href="projects/thefork.html" class="project-link">
-    <article class="project-container thefork-container">
+    <article class="project-container thefork-container" id="link-thefork">
       <div class="project-label">
         <h2>UX improvement and UI redesign</h2>
-        <p>[UX/UI]</p>
+        <p id="seeMore-thefork">[UX/UI]</p>
       </div>
     </article>
   </a> 
   <a href="projects/magis.html" class="project-link">
-    <article class="project-container magis-container">
-      <div class="project-label">
+    <article class="project-container magis-container" id="link-magis">
+      <div class="project-label" >
         <h2>Configurator tool optimization</h2>
-        <p>[Digital Strategy]</p>
+        <p id="seeMore-magis">[Digital Strategy]</p>
       </div>
     </article>
   </a> 
   <a href="projects/beautymask.html" class="project-link">
-    <article class="project-container mask-container">
+    <article class="project-container mask-container" id="link-mask">
       <div class="project-label">
         <h2>Beauty Mask Skill</h2>
-        <p>[Digital service design]</p>
+        <p id="seeMore-mask">[Digital service design]</p>
     </article>
   </a>
 </div>
@@ -110,7 +110,7 @@
 
     <article class="about-aside">
       <p class="bold software"> Software Skills</p>
-      <p class="software-list">Illustrator, InDesign, <br>Photoshop,  After Effects,<br>  HTML, CSS, JS, <br> Sketch, Adobe XD. </p>
+      <p class="software-list">Illustrator, InDesign, <br>Photoshop,  After Effects,<br>  HTML, CSS, JS, GitHub<br> Sketch, Adobe XD. </p>
       <p class="bold languages"> Languages</p>
       <p class="languages-list">Spanish (native), <br> English (intermediate-high), <br> Italian (beginner).</p>
       <p class="bold core"> Core Skills</p>
@@ -175,7 +175,39 @@
     menuList.classList.toggle("menu-mobile-list-on")
   }
 
-</script>
+  document.getElementById('link-thefork').addEventListener('mouseover', seeMore1);
+  document.getElementById('link-thefork').addEventListener('mouseout', reset1);
+
+  function seeMore1() {  
+    document.getElementById('seeMore-thefork').innerHTML="See project →";
+  };
+  function reset1() {  
+    document.getElementById('seeMore-thefork').innerHTML="[UX/UI]";
+  };
+
+  document.getElementById('link-magis').addEventListener('mouseover', seeMore2);
+  document.getElementById('link-magis').addEventListener('mouseout', reset2);
+
+  function seeMore2() {  
+    document.getElementById('seeMore-magis').innerHTML="See project →";
+  };
+  function reset2() {  
+    document.getElementById('seeMore-magis').innerHTML="[Digital Strategy]";
+  };
+
+  document.getElementById('link-mask').addEventListener('mouseover', seeMore3);
+  document.getElementById('link-mask').addEventListener('mouseout', reset3);
+
+  function seeMore3() {  
+    document.getElementById('seeMore-mask').innerHTML="See project →";
+  };
+  function reset3() {  
+    document.getElementById('seeMore-mask').innerHTML="[Digital service design]";
+  };
+
+
+  </script>
+
 <script src="/js/dot-nav-min.js">
   dotNav('section', 'easeInOutQuad');
 </script>

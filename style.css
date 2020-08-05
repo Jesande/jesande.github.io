@@ -5,6 +5,7 @@
   --grey-light: hsl(208, 21%, 92%);
   --accent: #a9a9a9;
   --accent: #FEBB01;
+  --accent: #B2D5FC;
   --black: #1a1a1a;
 }
 
@@ -416,7 +417,7 @@ section, .about-content {
 }
 
 .project-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: all 200ms ease-in 200ms;
 }
 
@@ -563,6 +564,11 @@ section, .about-content {
   display: inline-block;
   justify-self: flex-start;
   border: solid 1px var(--black);
+}
+.cv-btn:hover {
+  background-color: var(--accent);
+  color: white;
+  border: solid 1px rgb(208, 229, 255);
 }
 
 @media (max-width:1065px) {
