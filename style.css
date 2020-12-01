@@ -3,9 +3,9 @@
   --light: #FAFAFA;
   --grey: #dae1e7;
   --grey-light: hsl(208, 21%, 92%);
-  --accent: #a9a9a9;
+  /* --accent: #a9a9a9; */
   --accent: #FEBB01;
-  --accent: #B2D5FC;
+  /* --accent: #B2D5FC; */
   --black: #1a1a1a;
 }
 
@@ -457,6 +457,15 @@ section, .about-content {
   max-width: 80%;
   height: 437px;
   background-image: url("img/mask/jesande-skill-cover-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.music-container {
+  max-width: 80%;
+  height: 437px;
+  background-image: url("img/music/jesande-music-identity-cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
