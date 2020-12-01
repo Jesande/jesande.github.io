@@ -91,7 +91,7 @@
     <article class="project-container music-container" id="link-music">
       <div class="project-label">
         <h2>Identity Design for Digital Music</h2>
-        <p id="seeMore-mask">[Visual Identity Concept]</p>
+        <p id="seeMore-music">[Visual Identity Concept]</p>
     </article>
   </a>
 </div>
@@ -210,6 +210,16 @@
   };
   function reset3() {  
     document.getElementById('seeMore-mask').innerHTML="[Digital service design]";
+  };
+
+  document.getElementById('link-music').addEventListener('mouseover', seeMore4);
+  document.getElementById('link-music').addEventListener('mouseout', reset4);
+
+  function seeMore4() {  
+    document.getElementById('seeMore-music').innerHTML="See project →";
+  };
+  function reset4() {  
+    document.getElementById('seeMore-music').innerHTML="[Visual Identity Concept]";
   };
 
 
