@@ -47,7 +47,7 @@
 <section id="home">
   <article class="section-content">
     <p class="h1">Welcome!</p>
-    <h1 class="h2">My name is Jessica Delgado and I’m a professional graphic/web designer based in Milan. <br> Here you can find my most recent projects.</h1>
+    <h1 class="h2">My name is Jessica Delgado and I’m a professional graphic designer specializated in Web design based in Milan. <br> Here you can find my most recent projects.</h1>
   </article>
   <a href="#work" class="scroll-down">
     <!-- <span class="arrow">&downarrow;</span> -->
@@ -87,6 +87,13 @@
         <p id="seeMore-mask">[Digital Service Design]</p>
     </article>
   </a>
+  <!-- <a href="projects/prescription.html" class="project-link">
+    <article class="project-container prescription-container" id="link-prescription">
+      <div class="project-label">
+        <h2>User Journey </br> Re-Design</h2>
+        <p id="seeMore-prescription">[UX/UI]</p>
+    </article>
+  </a> -->
   <a href="projects/digitalmusicdesign.html" class="project-link">
     <article class="project-container music-container" id="link-music">
       <div class="project-label">
@@ -111,7 +118,7 @@
   <div class="about-content">
     <article class="about-abstrat">
       <p> With more than 10 years of experience both as a <span class="bold">graphic designer </span> and a former <span class="bold">business owner</span>, I have learned the importance of team-work, commitment, and communication. I have also cultivated skills to plan, develop, and deliver design/visual solutions. </p>
-      <p> In order to keep learning and expand my knowledge as a designer, I decided to leave Colombia and move to Italy in order to pursue a masters degree in a field that I’ve always been curious about; <span class="bold">Web and Digital Design.</span> </p> 
+      <p> In order to keep learning and expand my knowledge as a designer, I decided to leave Colombia and move to Italy where I pursued a masters degree in a field that I’ve always been curious about; <span class="bold">Web and Digital Design.</span> </p> 
       <a href="pdf/JesDelgado-CV-2020.pdf" alt="Jessica Delgado, graphic designer CV" download class="cv-btn"> Download CV ↓ </a>
     </article>
 
@@ -220,6 +227,15 @@
   };
   function reset4() {  
     document.getElementById('seeMore-music').innerHTML="[Visual Identity Concept]";
+  };
+  document.getElementById('link-prescription').addEventListener('mouseover', seeMore5);
+  document.getElementById('link-prescription').addEventListener('mouseout', reset5);
+
+  function seeMore5() {  
+    document.getElementById('seeMore-prescription').innerHTML="See project →";
+  };
+  function reset5() {  
+    document.getElementById('seeMore-prescription').innerHTML="[UX/UI]";
   };
 
 

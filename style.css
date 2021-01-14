@@ -358,7 +358,7 @@ section, .about-content {
 }
 
 #about {
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 @media (max-width:745px) {
@@ -412,7 +412,8 @@ section, .about-content {
   
   position: relative;
   
-  box-shadow: 0px 0px 39px -14px rgba(199,199,199,1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 39px -14px rgb(189, 188, 188);
   transition: all 200ms ease-out 200ms;
 }
 
@@ -466,6 +467,14 @@ section, .about-content {
   max-width: 80%;
   height: 437px;
   background-image: url("img/music/jesande-music-identity-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.prescription-container {
+  max-width: 80%;
+  height: 437px;
+  background-image: url("img/e-commerce/cover-behance.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
